@@ -1,0 +1,45 @@
+<?php
+$dalTableglobal_ejecucion = array();
+$dalTableglobal_ejecucion["id_transac"] = array("type"=>3,"varname"=>"id_transac", "name" => "id_transac");
+$dalTableglobal_ejecucion["VIGENCIA"] = array("type"=>2,"varname"=>"VIGENCIA", "name" => "VIGENCIA");
+$dalTableglobal_ejecucion["CODIGO_BPIN"] = array("type"=>200,"varname"=>"CODIGO_BPIN", "name" => "CODIGO_BPIN");
+$dalTableglobal_ejecucion["FICHA_BPIN"] = array("type"=>200,"varname"=>"FICHA_BPIN", "name" => "FICHA_BPIN");
+$dalTableglobal_ejecucion["UEJ"] = array("type"=>200,"varname"=>"UEJ", "name" => "UEJ");
+$dalTableglobal_ejecucion["UEJ_S"] = array("type"=>200,"varname"=>"UEJ_S", "name" => "UEJ_S");
+$dalTableglobal_ejecucion["UEJ_MIN"] = array("type"=>200,"varname"=>"UEJ_MIN", "name" => "UEJ_MIN");
+$dalTableglobal_ejecucion["NOMBRE UEJ"] = array("type"=>200,"varname"=>"NOMBRE_UEJ", "name" => "NOMBRE UEJ");
+$dalTableglobal_ejecucion["RUBRO"] = array("type"=>200,"varname"=>"RUBRO", "name" => "RUBRO");
+$dalTableglobal_ejecucion["USO_SN"] = array("type"=>16,"varname"=>"USO_SN", "name" => "USO_SN");
+$dalTableglobal_ejecucion["TIPO"] = array("type"=>200,"varname"=>"TIPO", "name" => "TIPO");
+$dalTableglobal_ejecucion["CTA"] = array("type"=>200,"varname"=>"CTA", "name" => "CTA");
+$dalTableglobal_ejecucion["SUBCTA"] = array("type"=>200,"varname"=>"SUBCTA", "name" => "SUBCTA");
+$dalTableglobal_ejecucion["OBJ"] = array("type"=>200,"varname"=>"OBJ", "name" => "OBJ");
+$dalTableglobal_ejecucion["ORD"] = array("type"=>200,"varname"=>"ORD", "name" => "ORD");
+$dalTableglobal_ejecucion["SORORD"] = array("type"=>200,"varname"=>"SORORD", "name" => "SORORD");
+$dalTableglobal_ejecucion["ITEM"] = array("type"=>200,"varname"=>"ITEM", "name" => "ITEM");
+$dalTableglobal_ejecucion["SUBITEM"] = array("type"=>200,"varname"=>"SUBITEM", "name" => "SUBITEM");
+$dalTableglobal_ejecucion["SUBITEM 2"] = array("type"=>200,"varname"=>"SUBITEM_2", "name" => "SUBITEM 2");
+$dalTableglobal_ejecucion["FUENTE"] = array("type"=>200,"varname"=>"FUENTE", "name" => "FUENTE");
+$dalTableglobal_ejecucion["REC"] = array("type"=>200,"varname"=>"REC", "name" => "REC");
+$dalTableglobal_ejecucion["SIT"] = array("type"=>200,"varname"=>"SIT", "name" => "SIT");
+$dalTableglobal_ejecucion["DESCRIPCION"] = array("type"=>200,"varname"=>"DESCRIPCION", "name" => "DESCRIPCION");
+$dalTableglobal_ejecucion["APR. INICIAL"] = array("type"=>5,"varname"=>"APR__INICIAL", "name" => "APR. INICIAL");
+$dalTableglobal_ejecucion["APR. ADICIONADA"] = array("type"=>5,"varname"=>"APR__ADICIONADA", "name" => "APR. ADICIONADA");
+$dalTableglobal_ejecucion["APR. REDUCIDA"] = array("type"=>5,"varname"=>"APR__REDUCIDA", "name" => "APR. REDUCIDA");
+$dalTableglobal_ejecucion["APR. VIGENTE"] = array("type"=>5,"varname"=>"APR__VIGENTE", "name" => "APR. VIGENTE");
+$dalTableglobal_ejecucion["APR BLOQUEADA"] = array("type"=>5,"varname"=>"APR_BLOQUEADA", "name" => "APR BLOQUEADA");
+$dalTableglobal_ejecucion["CDP"] = array("type"=>5,"varname"=>"CDP", "name" => "CDP");
+$dalTableglobal_ejecucion["APR. DISPONIBLE"] = array("type"=>5,"varname"=>"APR__DISPONIBLE", "name" => "APR. DISPONIBLE");
+$dalTableglobal_ejecucion["COMPROMISO"] = array("type"=>5,"varname"=>"COMPROMISO", "name" => "COMPROMISO");
+$dalTableglobal_ejecucion["OBLIGACION"] = array("type"=>5,"varname"=>"OBLIGACION", "name" => "OBLIGACION");
+$dalTableglobal_ejecucion["ORDEN PAGO"] = array("type"=>5,"varname"=>"ORDEN_PAGO", "name" => "ORDEN PAGO");
+$dalTableglobal_ejecucion["PAGOS"] = array("type"=>5,"varname"=>"PAGOS", "name" => "PAGOS");
+$dalTableglobal_ejecucion["FECHA_CORTE"] = array("type"=>7,"varname"=>"FECHA_CORTE", "name" => "FECHA_CORTE");
+$dalTableglobal_ejecucion["FECHA_ACTUALIZACION"] = array("type"=>135,"varname"=>"FECHA_ACTUALIZACION", "name" => "FECHA_ACTUALIZACION");
+$dalTableglobal_ejecucion["DEPENDENCIA_ID"] = array("type"=>3,"varname"=>"DEPENDENCIA_ID", "name" => "DEPENDENCIA_ID");
+$dalTableglobal_ejecucion["RESPONSABLE_ID"] = array("type"=>3,"varname"=>"RESPONSABLE_ID", "name" => "RESPONSABLE_ID");
+$dalTableglobal_ejecucion["DEPENDENCIA_SUP_ID"] = array("type"=>3,"varname"=>"DEPENDENCIA_SUP_ID", "name" => "DEPENDENCIA_SUP_ID");
+	$dalTableglobal_ejecucion["id_transac"]["key"]=true;
+
+$dal_info["sep2_at_localhost__global_ejecucion"] = &$dalTableglobal_ejecucion;
+?>

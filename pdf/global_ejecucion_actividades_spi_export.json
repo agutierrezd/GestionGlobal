@@ -1,0 +1,183 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel global_ejecucion_actividades_spi export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_export_field}","text":{$Id_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field1}","text":{$Vigencia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field2}","text":{$Periodo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field3}","text":{$Sector_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field4}","text":{$EntidadID_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field5}","text":{$Entidad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field6}","text":{$codigoBPINProyecto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field7}","text":{$Recurso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field8}","text":{$NombreProyecto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field9}","text":{$ObjetivoEspecificoID_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field10}","text":{$ObjetivoEspecifico_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field11}","text":{$ProductoID_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field12}","text":{$Producto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field13}","text":{$Actividad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field14}","text":{$Presupuesto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field15}","text":{$DEPENDENCIA_ID_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field16}","text":{$RESPONSABLE_ID_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field17}","text":{$DEPENDENCIA_SUP_ID_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field18}","text":{$ctrl_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field19}","text":{$Cod_Prod_SIIF_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field20}","text":{$Cod_Prod_SIIF_S_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

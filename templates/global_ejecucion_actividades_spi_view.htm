@@ -1,0 +1,552 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel global_ejecucion_actividades_spi view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Id}  r-vertical-field" data-fieldname="Id" data-signal-error-for="Id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="Id" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Id}">
+		
+		{BEGIN Id_label}{$label global_ejecucion_actividades_spi Id }{END Id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Id_value}	</div>
+
+		
+</div>
+
+
+{END Id_fieldblock}
+											
+{BEGIN Vigencia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Vigencia}  r-vertical-field" data-fieldname="Vigencia" data-signal-error-for="Vigencia{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="Vigencia" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Vigencia}">
+		
+		{BEGIN Vigencia_label}{$label global_ejecucion_actividades_spi Vigencia }{END Vigencia_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Vigencia_value}	</div>
+
+		
+</div>
+
+
+{END Vigencia_fieldblock}
+											
+{BEGIN Periodo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Periodo}  r-vertical-field" data-fieldname="Periodo" data-signal-error-for="Periodo{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="Periodo" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Periodo}">
+		
+		{BEGIN Periodo_label}{$label global_ejecucion_actividades_spi Periodo }{END Periodo_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Periodo_value}	</div>
+
+		
+</div>
+
+
+{END Periodo_fieldblock}
+											
+{BEGIN Sector_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Sector}  r-vertical-field" data-fieldname="Sector" data-signal-error-for="Sector{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="Sector" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Sector}">
+		
+		{BEGIN Sector_label}{$label global_ejecucion_actividades_spi Sector }{END Sector_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Sector_value}	</div>
+
+		
+</div>
+
+
+{END Sector_fieldblock}
+											
+{BEGIN EntidadID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_EntidadID}  r-vertical-field" data-fieldname="EntidadID" data-signal-error-for="EntidadID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="EntidadID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_EntidadID}">
+		
+		{BEGIN EntidadID_label}{$label global_ejecucion_actividades_spi EntidadID }{END EntidadID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$EntidadID_value}	</div>
+
+		
+</div>
+
+
+{END EntidadID_fieldblock}
+											
+{BEGIN Entidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Entidad}  r-vertical-field" data-fieldname="Entidad" data-signal-error-for="Entidad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="Entidad" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Entidad}">
+		
+		{BEGIN Entidad_label}{$label global_ejecucion_actividades_spi Entidad }{END Entidad_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Entidad_value}	</div>
+
+		
+</div>
+
+
+{END Entidad_fieldblock}
+											
+{BEGIN codigoBPINProyecto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_codigoBPINProyecto}  r-vertical-field" data-fieldname="codigoBPINProyecto" data-signal-error-for="codigoBPINProyecto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="codigoBPINProyecto" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_codigoBPINProyecto}">
+		
+		{BEGIN codigoBPINProyecto_label}{$label global_ejecucion_actividades_spi codigoBPINProyecto }{END codigoBPINProyecto_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$codigoBPINProyecto_value}	</div>
+
+		
+</div>
+
+
+{END codigoBPINProyecto_fieldblock}
+											
+{BEGIN Recurso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Recurso}  r-vertical-field" data-fieldname="Recurso" data-signal-error-for="Recurso{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="Recurso" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Recurso}">
+		
+		{BEGIN Recurso_label}{$label global_ejecucion_actividades_spi Recurso }{END Recurso_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Recurso_value}	</div>
+
+		
+</div>
+
+
+{END Recurso_fieldblock}
+											
+{BEGIN NombreProyecto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NombreProyecto}  r-vertical-field" data-fieldname="NombreProyecto" data-signal-error-for="NombreProyecto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="NombreProyecto" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_NombreProyecto}">
+		
+		{BEGIN NombreProyecto_label}{$label global_ejecucion_actividades_spi NombreProyecto }{END NombreProyecto_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$NombreProyecto_value}	</div>
+
+		
+</div>
+
+
+{END NombreProyecto_fieldblock}
+											
+{BEGIN ObjetivoEspecificoID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ObjetivoEspecificoID}  r-vertical-field" data-fieldname="ObjetivoEspecificoID" data-signal-error-for="ObjetivoEspecificoID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="ObjetivoEspecificoID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ObjetivoEspecificoID}">
+		
+		{BEGIN ObjetivoEspecificoID_label}{$label global_ejecucion_actividades_spi ObjetivoEspecificoID }{END ObjetivoEspecificoID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ObjetivoEspecificoID_value}	</div>
+
+		
+</div>
+
+
+{END ObjetivoEspecificoID_fieldblock}
+											
+{BEGIN ObjetivoEspecifico_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ObjetivoEspecifico}  r-vertical-field" data-fieldname="ObjetivoEspecifico" data-signal-error-for="ObjetivoEspecifico{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="ObjetivoEspecifico" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ObjetivoEspecifico}">
+		
+		{BEGIN ObjetivoEspecifico_label}{$label global_ejecucion_actividades_spi ObjetivoEspecifico }{END ObjetivoEspecifico_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ObjetivoEspecifico_value}	</div>
+
+		
+</div>
+
+
+{END ObjetivoEspecifico_fieldblock}
+											
+{BEGIN ProductoID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ProductoID}  r-vertical-field" data-fieldname="ProductoID" data-signal-error-for="ProductoID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="ProductoID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ProductoID}">
+		
+		{BEGIN ProductoID_label}{$label global_ejecucion_actividades_spi ProductoID }{END ProductoID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ProductoID_value}	</div>
+
+		
+</div>
+
+
+{END ProductoID_fieldblock}
+											
+{BEGIN Producto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Producto}  r-vertical-field" data-fieldname="Producto" data-signal-error-for="Producto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="Producto" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Producto}">
+		
+		{BEGIN Producto_label}{$label global_ejecucion_actividades_spi Producto }{END Producto_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Producto_value}	</div>
+
+		
+</div>
+
+
+{END Producto_fieldblock}
+											
+{BEGIN Actividad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Actividad}  r-vertical-field" data-fieldname="Actividad" data-signal-error-for="Actividad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="Actividad" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Actividad}">
+		
+		{BEGIN Actividad_label}{$label global_ejecucion_actividades_spi Actividad }{END Actividad_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Actividad_value}	</div>
+
+		
+</div>
+
+
+{END Actividad_fieldblock}
+											
+{BEGIN Presupuesto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Presupuesto}  r-vertical-field" data-fieldname="Presupuesto" data-signal-error-for="Presupuesto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="Presupuesto" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Presupuesto}">
+		
+		{BEGIN Presupuesto_label}{$label global_ejecucion_actividades_spi Presupuesto }{END Presupuesto_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Presupuesto_value}	</div>
+
+		
+</div>
+
+
+{END Presupuesto_fieldblock}
+											
+{BEGIN DEPENDENCIA_ID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DEPENDENCIA_ID}  r-vertical-field" data-fieldname="DEPENDENCIA_ID" data-signal-error-for="DEPENDENCIA_ID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="DEPENDENCIA_ID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_DEPENDENCIA_ID}">
+		
+		{BEGIN DEPENDENCIA_ID_label}{$label global_ejecucion_actividades_spi DEPENDENCIA_ID }{END DEPENDENCIA_ID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$DEPENDENCIA_ID_value}	</div>
+
+		
+</div>
+
+
+{END DEPENDENCIA_ID_fieldblock}
+											
+{BEGIN RESPONSABLE_ID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RESPONSABLE_ID}  r-vertical-field" data-fieldname="RESPONSABLE_ID" data-signal-error-for="RESPONSABLE_ID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="RESPONSABLE_ID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_RESPONSABLE_ID}">
+		
+		{BEGIN RESPONSABLE_ID_label}{$label global_ejecucion_actividades_spi RESPONSABLE_ID }{END RESPONSABLE_ID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$RESPONSABLE_ID_value}	</div>
+
+		
+</div>
+
+
+{END RESPONSABLE_ID_fieldblock}
+											
+{BEGIN DEPENDENCIA_SUP_ID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DEPENDENCIA_SUP_ID}  r-vertical-field" data-fieldname="DEPENDENCIA_SUP_ID" data-signal-error-for="DEPENDENCIA_SUP_ID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="DEPENDENCIA_SUP_ID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_DEPENDENCIA_SUP_ID}">
+		
+		{BEGIN DEPENDENCIA_SUP_ID_label}{$label global_ejecucion_actividades_spi DEPENDENCIA_SUP_ID }{END DEPENDENCIA_SUP_ID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$DEPENDENCIA_SUP_ID_value}	</div>
+
+		
+</div>
+
+
+{END DEPENDENCIA_SUP_ID_fieldblock}
+											
+{BEGIN ctrl_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ctrl}  r-vertical-field" data-fieldname="ctrl" data-signal-error-for="ctrl{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="ctrl" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ctrl}">
+		
+		{BEGIN ctrl_label}{$label global_ejecucion_actividades_spi ctrl }{END ctrl_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ctrl_value}	</div>
+
+		
+</div>
+
+
+{END ctrl_fieldblock}
+											
+{BEGIN Cod_Prod_SIIF_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Cod_Prod_SIIF}  r-vertical-field" data-fieldname="Cod_Prod_SIIF" data-signal-error-for="Cod_Prod_SIIF{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="Cod_Prod_SIIF" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Cod_Prod_SIIF}">
+		
+		{BEGIN Cod_Prod_SIIF_label}{$label global_ejecucion_actividades_spi Cod_Prod_SIIF }{END Cod_Prod_SIIF_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Cod_Prod_SIIF_value}	</div>
+
+		
+</div>
+
+
+{END Cod_Prod_SIIF_fieldblock}
+											
+{BEGIN Cod_Prod_SIIF_S_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Cod_Prod_SIIF_S}  r-vertical-field" data-fieldname="Cod_Prod_SIIF_S" data-signal-error-for="Cod_Prod_SIIF_S{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="Cod_Prod_SIIF_S" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Cod_Prod_SIIF_S}">
+		
+		{BEGIN Cod_Prod_SIIF_S_label}{$label global_ejecucion_actividades_spi Cod_Prod_SIIF_S }{END Cod_Prod_SIIF_S_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Cod_Prod_SIIF_S_value}	</div>
+
+		
+</div>
+
+
+{END Cod_Prod_SIIF_S_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$edit_page_button_attrs}  title="" >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
