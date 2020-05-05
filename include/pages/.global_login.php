@@ -171,7 +171,7 @@ array( 'cell' => 'c2' ) ),
 'remember_password' => array( 'type' => 'remember_password' ),
 'continue_login_button' => array( 'type' => 'continue_login_button' ),
 'image' => array( 'type' => 'image',
-'imagePath' => 'Logo_Coldeportes.png' ) ),
+'imagePath' => 'logo_institucional.png' ) ),
 'dbProps' => array(  ),
 'version' => 4 );
 		?>

@@ -539,7 +539,7 @@ $globalSettings["LandingPageId"] = "login";
 
 $globalSettings["ProjectLogo"] = array();
 $globalSettings["ProjectLogo"]["Spanish"] = "<DIV style=\"position: relative; top: -1px; white-space: nowrap;\">
-<IMG height=\"90%\" id=\"navbarlogo\" alt=\"Logo Entidad\" src=\"../Logo.png\" />
+<IMG height=\"100%\" id=\"navbarlogo\" alt=\"Logo Entidad\" src=\"images/xlogo.png\" />
 </DIV>";
 
 $globalSettings["CookieBanner"] = array();
@@ -644,9 +644,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "159_1585711675";
+$projectBuildKey = "165_1585711675";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "159";
+$projectBuildNumber = "165";
 
 $mlang_messages = array();
 $mlang_charsets = array();

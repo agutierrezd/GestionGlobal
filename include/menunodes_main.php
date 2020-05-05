@@ -8,6 +8,84 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNode = array();
 	$menuNode["id"] = "1";
 	$menuNode["name"] = "";
+	$menuNode["href"] = "";
+	$menuNode["type"] = "Group";
+	$menuNode["table"] = "";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "0";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "None";
+	$menuNode["pageType"] = strtolower("");//
+	$menuNode["pageId"] = "";
+	$menuNode["openType"] = "None";
+
+	$menuNode["icon"] = "glyphicon-th-large";
+	$menuNode["iconType"] = "2";
+	$menuNode["iconShow"] = "1";
+
+		$menuNode["color"] = "";
+
+	$menuNode["title"] = "";
+
+
+
+	$menuNodesObject->menuNodes["main"][] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "2";
+	$menuNode["name"] = "Gestión de Contratos";
+		$menuNode["href"] = "external.php?url=".rawurlencode("../GestionContratos/");
+	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "1";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "External";
+	$menuNode["pageType"] = strtolower("");//
+	$menuNode["pageId"] = "";
+	$menuNode["openType"] = "None";
+
+	$menuNode["icon"] = "glyphicon-new-window";
+	$menuNode["iconType"] = "2";
+	$menuNode["iconShow"] = "1";
+
+		$menuNode["color"] = "";
+
+	$menuNode["title"] = "Gestión de Contratos";
+
+
+
+	$menuNodesObject->menuNodes["main"][] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "3";
+	$menuNode["name"] = "Gestión Global";
+		$menuNode["href"] = "external.php?url=".rawurlencode("menu.php");
+	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "1";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "External";
+	$menuNode["pageType"] = strtolower("");//
+	$menuNode["pageId"] = "";
+	$menuNode["openType"] = "None";
+
+	$menuNode["icon"] = "glyphicon-new-window";
+	$menuNode["iconType"] = "2";
+	$menuNode["iconShow"] = "1";
+
+		$menuNode["color"] = "";
+
+	$menuNode["title"] = "Gestión Global";
+
+
+
+	$menuNodesObject->menuNodes["main"][] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "4";
+	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "Dashboard";
@@ -32,7 +110,7 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "2";
+	$menuNode["id"] = "5";
 	$menuNode["name"] = "PRESUPUESTO";
 	$menuNode["href"] = "";
 	$menuNode["type"] = "Group";
@@ -58,14 +136,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "3";
+	$menuNode["id"] = "6";
 	$menuNode["name"] = "DOCUMENTOS SIIF";
 	$menuNode["href"] = "";
 	$menuNode["type"] = "Group";
 	$menuNode["table"] = "";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "2";
+	$menuNode["parent"] = "5";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "None";
 	$menuNode["pageType"] = strtolower("");//
@@ -84,14 +162,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "4";
+	$menuNode["id"] = "7";
 	$menuNode["name"] = "Ejecución presupuestal agregada";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "ep_agregada";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "3";
+	$menuNode["parent"] = "6";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -110,14 +188,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "5";
+	$menuNode["id"] = "8";
 	$menuNode["name"] = "Compromisos";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "ep_compromisos";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "3";
+	$menuNode["parent"] = "6";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -136,14 +214,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "6";
+	$menuNode["id"] = "9";
 	$menuNode["name"] = "Obligaciones";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "ep_obligaciones";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "3";
+	$menuNode["parent"] = "6";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -162,14 +240,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "7";
+	$menuNode["id"] = "10";
 	$menuNode["name"] = "PLANEACIÓN PAA";
 	$menuNode["href"] = "";
 	$menuNode["type"] = "Group";
 	$menuNode["table"] = "";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "2";
+	$menuNode["parent"] = "5";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "None";
 	$menuNode["pageType"] = strtolower("");//
@@ -188,14 +266,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "8";
+	$menuNode["id"] = "11";
 	$menuNode["name"] = "Ejecución presupuestal PAA";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "global_ejecucion";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "7";
+	$menuNode["parent"] = "10";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -214,14 +292,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "9";
+	$menuNode["id"] = "12";
 	$menuNode["name"] = "Catálogo presupuestal";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "rep_prg001_catalogopresupuestal";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "2";
+	$menuNode["parent"] = "5";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -240,7 +318,7 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "10";
+	$menuNode["id"] = "13";
 	$menuNode["name"] = "CONTRATACION";
 	$menuNode["href"] = "";
 	$menuNode["type"] = "Group";
@@ -266,14 +344,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "11";
+	$menuNode["id"] = "14";
 	$menuNode["name"] = "Clase";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contrato_tipo";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -292,14 +370,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "12";
+	$menuNode["id"] = "15";
 	$menuNode["name"] = "Codificación contractual";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contrato_pre";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -318,14 +396,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "13";
+	$menuNode["id"] = "16";
 	$menuNode["name"] = "Clases de otrosi";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contrato_otrosi_type";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -344,14 +422,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "14";
+	$menuNode["id"] = "17";
 	$menuNode["name"] = "Estados del contrato";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contrato_estados";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -370,14 +448,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "15";
+	$menuNode["id"] = "18";
 	$menuNode["name"] = "Forma de Pago";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contrato_forma_pago";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -396,14 +474,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "16";
+	$menuNode["id"] = "19";
 	$menuNode["name"] = "Naturaleza jurídica";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contrato_natjuridica";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -422,14 +500,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "17";
+	$menuNode["id"] = "20";
 	$menuNode["name"] = "Periodos de entrega";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "interventor_periodos";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -448,14 +526,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "18";
+	$menuNode["id"] = "21";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "polizas_aseguradoras";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -474,14 +552,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "19";
+	$menuNode["id"] = "22";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "polizas_tipo";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -500,14 +578,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "20";
+	$menuNode["id"] = "23";
 	$menuNode["name"] = "Relación de bancos";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "tipo_banco";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -526,14 +604,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "21";
+	$menuNode["id"] = "24";
 	$menuNode["name"] = "Tipos de contrato";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "tparam_tipo_ct_000";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -552,14 +630,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "22";
+	$menuNode["id"] = "25";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "tipo_cta_banco";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -578,14 +656,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "23";
+	$menuNode["id"] = "26";
 	$menuNode["name"] = "Tipo Doc. identidad";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "tipo_docidentidad";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -604,14 +682,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "24";
+	$menuNode["id"] = "27";
 	$menuNode["name"] = "Tipo documento adjunto";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contrato_attached_type";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -630,14 +708,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "25";
+	$menuNode["id"] = "28";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "tipo_liquidacion";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -656,14 +734,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "26";
+	$menuNode["id"] = "29";
 	$menuNode["name"] = "UEJ";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contrato_tipo_unidad";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "10";
+	$menuNode["parent"] = "13";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -682,7 +760,7 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "27";
+	$menuNode["id"] = "30";
 	$menuNode["name"] = "GLOBALES";
 	$menuNode["href"] = "";
 	$menuNode["type"] = "Group";
@@ -708,14 +786,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "28";
+	$menuNode["id"] = "31";
 	$menuNode["name"] = "Cargos";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "cargo";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "27";
+	$menuNode["parent"] = "30";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -734,14 +812,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "29";
+	$menuNode["id"] = "32";
 	$menuNode["name"] = "Dependencias";
 	$menuNode["href"] = "";
 	$menuNode["type"] = "Group";
 	$menuNode["table"] = "";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "27";
+	$menuNode["parent"] = "30";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "None";
 	$menuNode["pageType"] = strtolower("");//
@@ -760,14 +838,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "30";
+	$menuNode["id"] = "33";
 	$menuNode["name"] = "Dependencias 01";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "dependencias_001";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "29";
+	$menuNode["parent"] = "32";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -786,14 +864,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "31";
+	$menuNode["id"] = "34";
 	$menuNode["name"] = "Dependencias 02";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "dependencia";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "29";
+	$menuNode["parent"] = "32";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -812,14 +890,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "32";
+	$menuNode["id"] = "35";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "divipola";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "27";
+	$menuNode["parent"] = "30";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -838,14 +916,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "33";
+	$menuNode["id"] = "36";
 	$menuNode["name"] = "Meses";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "global_month";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "27";
+	$menuNode["parent"] = "30";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -864,14 +942,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "34";
+	$menuNode["id"] = "37";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "vigencia";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "27";
+	$menuNode["parent"] = "30";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -890,7 +968,7 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "35";
+	$menuNode["id"] = "38";
 	$menuNode["name"] = "USUARIOS";
 	$menuNode["href"] = "";
 	$menuNode["type"] = "Group";
@@ -916,14 +994,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "36";
+	$menuNode["id"] = "39";
 	$menuNode["name"] = "Usuarios del sistema";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "funcionario";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "35";
+	$menuNode["parent"] = "38";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -937,84 +1015,6 @@ function getMenuNodes_main($menuNodesObject)
 		$menuNode["color"] = "";
 
 	$menuNode["title"] = "Usuarios del sistema";
-
-
-
-	$menuNodesObject->menuNodes["main"][] = $menuNode;
-	$menuNode = array();
-	$menuNode["id"] = "37";
-	$menuNode["name"] = "MÓDULOS";
-	$menuNode["href"] = "";
-	$menuNode["type"] = "Group";
-	$menuNode["table"] = "";
-	$menuNode["style"] = "";
-	$menuNode["params"] = "";
-	$menuNode["parent"] = "0";
-	$menuNode["nameType"] = "Text";
-	$menuNode["linkType"] = "None";
-	$menuNode["pageType"] = strtolower("");//
-	$menuNode["pageId"] = "";
-	$menuNode["openType"] = "None";
-
-	$menuNode["icon"] = "";
-	$menuNode["iconType"] = "0";
-	$menuNode["iconShow"] = "1";
-
-		$menuNode["color"] = "";
-
-	$menuNode["title"] = "MÓDULOS";
-
-
-
-	$menuNodesObject->menuNodes["main"][] = $menuNode;
-	$menuNode = array();
-	$menuNode["id"] = "38";
-	$menuNode["name"] = "Gestión de Contratos";
-		$menuNode["href"] = "external.php?url=".rawurlencode("../GestionContratos/");
-	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "";
-	$menuNode["style"] = "";
-	$menuNode["params"] = "";
-	$menuNode["parent"] = "37";
-	$menuNode["nameType"] = "Text";
-	$menuNode["linkType"] = "External";
-	$menuNode["pageType"] = strtolower("");//
-	$menuNode["pageId"] = "";
-	$menuNode["openType"] = "None";
-
-	$menuNode["icon"] = "glyphicon-new-window";
-	$menuNode["iconType"] = "2";
-	$menuNode["iconShow"] = "1";
-
-		$menuNode["color"] = "";
-
-	$menuNode["title"] = "Gestión de Contratos";
-
-
-
-	$menuNodesObject->menuNodes["main"][] = $menuNode;
-	$menuNode = array();
-	$menuNode["id"] = "39";
-	$menuNode["name"] = "Gestión Global";
-		$menuNode["href"] = "external.php?url=".rawurlencode("menu.php");
-	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "";
-	$menuNode["style"] = "";
-	$menuNode["params"] = "";
-	$menuNode["parent"] = "37";
-	$menuNode["nameType"] = "Text";
-	$menuNode["linkType"] = "External";
-	$menuNode["pageType"] = strtolower("");//
-	$menuNode["pageId"] = "";
-	$menuNode["openType"] = "None";
-
-	$menuNode["icon"] = "glyphicon-new-window";
-	$menuNode["iconType"] = "2";
-	$menuNode["iconShow"] = "1";
-
-		$menuNode["color"] = "";
-
-	$menuNode["title"] = "Gestión Global";
 
 
 

@@ -1922,5 +1922,6 @@ array( 'cell' => 'footcell_field27' ) ) ) ),
 'grid_checkbox_head' => array( 'type' => 'grid_checkbox_head' ),
 'expand_button' => array( 'type' => 'expand_button' ) ),
 'dbProps' => array(  ),
-'version' => 4 );
+'version' => 4,
+'fixedTopbar' => true );
 		?>
