@@ -64,28 +64,8 @@ pdfDocument = {
 	
 			"text": [
 		
-				
-			{"text":"","background":"#6B8E23","hidden":"{$item_hide_welcome_item}"},
-				
-				
-			{"text":"","background":"#9ACD32","hidden":"{$item_hide_welcome_item1}"},
-				
-				
-			{"text":"","background":"#778899","hidden":"{$item_hide_welcome_item2}"},
-				
-				
-			{"text":"","background":"#5F9EA0","hidden":"{$item_hide_welcome_item3}"},
-				
-				
-			{"text":"","background":"#6493EA","hidden":"{$item_hide_welcome_item4}"},
-				
-				
-			{"text":"","background":"#3CB371","hidden":"{$item_hide_welcome_item5}"},
-				
-				
-			{"text":"","background":"#D2691E","hidden":"{$item_hide_welcome_item6}"},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },
