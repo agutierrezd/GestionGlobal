@@ -787,7 +787,7 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
 	$menuNode["id"] = "31";
-	$menuNode["name"] = "Cargos";
+	$menuNode["name"] = "Cargos en la entidad";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "cargo";
@@ -806,7 +806,7 @@ function getMenuNodes_main($menuNodesObject)
 
 		$menuNode["color"] = "";
 
-	$menuNode["title"] = "Cargos";
+	$menuNode["title"] = "Cargos en la entidad";
 
 
 

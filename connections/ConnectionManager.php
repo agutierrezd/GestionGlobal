@@ -418,7 +418,6 @@ class ConnectionManager
 		$connectionsIds["dependencias_001"] = "edl_at_localhost";
 		$connectionsIds["dependencia"] = "edl_at_localhost";
 		$connectionsIds["tparam_estados"] = "edl_at_localhost";
-		$connectionsIds["cargo"] = "edl_at_localhost";
 		$connectionsIds["tparam_sn"] = "edl_at_localhost";
 		$connectionsIds["funcionario"] = "edl_at_localhost";
 		$connectionsIds["nombramiento"] = "edl_at_localhost";
@@ -468,6 +467,7 @@ class ConnectionManager
 		$connectionsIds["tparam_fondopension"] = "dbct_at_localhost";
 		$connectionsIds["tparam_fondosalud"] = "dbct_at_localhost";
 		$connectionsIds["tparam_tipo_ct_arl"] = "dbct_at_localhost";
+		$connectionsIds["cargo"] = "edl_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

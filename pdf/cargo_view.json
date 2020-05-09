@@ -222,35 +222,9 @@ pdfDocument = {
 				{END row_grid_1}
 								{BEGIN row_grid_2}
 				[
-												{BEGIN cellblock_grid_c1}
+												{BEGIN cellblock_grid_c6}
 {
-	cellId: 'c1',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel cargo Directivo }","bold":true},{"text":{$Directivo_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_c1}
-																			{BEGIN cellblock_grid_c2}
-{
-	cellId: 'c2',
+	cellId: 'c6',
 	col:0,
 	row:0,
 			style: 'cell',
@@ -273,7 +247,31 @@ pdfDocument = {
           "alignment": 'left',
   },
 
-{END cellblock_grid_c2}
+{END cellblock_grid_c6}
+																			{BEGIN cellblock_grid_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c7}
 											],
 				{END row_grid_2}
 					]

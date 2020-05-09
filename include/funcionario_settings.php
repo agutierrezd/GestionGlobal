@@ -1317,7 +1317,7 @@ $tdatafuncionario[".hideMobileList"] = array();
 	
 		
 	$edata["LinkField"] = "id";
-	$edata["LinkFieldType"] = 0;
+	$edata["LinkFieldType"] = 3;
 	$edata["DisplayField"] = "nombre";
 
 	

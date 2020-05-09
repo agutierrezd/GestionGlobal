@@ -100,72 +100,7 @@
 				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
 		</div>
 		{END searchCtrlBlock}
-																		{BEGIN searchCtrlBlock_Directivo}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_Directivo}" {$filterRow_attrs_Directivo}>
-			<label>{$label cargo Directivo }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_Directivo}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_Directivo}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_Directivo}</span>
-						</div>
-		{END searchCtrlBlock_Directivo}
-																{BEGIN searchCtrlBlock_ExperienciaMeses}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_ExperienciaMeses}" {$filterRow_attrs_ExperienciaMeses}>
-			<label>{$label cargo ExperienciaMeses }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_ExperienciaMeses}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_ExperienciaMeses}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_ExperienciaMeses}</span>
-						</div>
-		{END searchCtrlBlock_ExperienciaMeses}
-																{BEGIN searchCtrlBlock_idComportamentalFK}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_idComportamentalFK}" {$filterRow_attrs_idComportamentalFK}>
-			<label>{$label cargo idComportamentalFK }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_idComportamentalFK}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_idComportamentalFK}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_idComportamentalFK}</span>
-						</div>
-		{END searchCtrlBlock_idComportamentalFK}
-																{BEGIN searchCtrlBlock_codcar}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_codcar}" {$filterRow_attrs_codcar}>
-			<label>{$label cargo codcar }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_codcar}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_codcar}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_codcar}</span>
-						</div>
-		{END searchCtrlBlock_codcar}
-																{BEGIN searchCtrlBlock_propositoPrincipal}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_propositoPrincipal}" {$filterRow_attrs_propositoPrincipal}>
-			<label>{$label cargo propositoPrincipal }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_propositoPrincipal}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_propositoPrincipal}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_propositoPrincipal}</span>
-						</div>
-		{END searchCtrlBlock_propositoPrincipal}
-																{BEGIN searchCtrlBlock_nombre}
+																		{BEGIN searchCtrlBlock_nombre}
 
 
 		<div class="form-group srchPanelRow {$filterRow_class_nombre}" {$filterRow_attrs_nombre}>
@@ -356,6 +291,14 @@
 		</a>
 	</li>
 {END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="cargo_import.php?{$crosstable_attrs}"  title="" >
+				
+		Importar		
+		</a>
+	</li>
+{END import_link}
 					</ul>
 	</span>
 </span>
@@ -558,9 +501,6 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="estado"]:before {
 		content: "{$label cargo estado}";
 	}
-							[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Directivo"]:before {
-		content: "{$label cargo Directivo}";
-	}
 	}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
@@ -731,45 +671,18 @@
 	{$cell_grid_headcell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$Directivo_class}
-			"
-
-			data-field="Directivo"
-	
-	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Directivo_fieldheadercolumn}
-	{BEGIN Directivo_fieldheader}
-	<SPAN {$Directivo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Directivo">
-	{$label cargo Directivo }	{$arrow_icon_Directivo}
-	</SPAN>
-	{END Directivo_fieldheader}
-{END Directivo_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field4}
-				 
-					{BEGIN cellblock_grid_headcell_field5}
-	<th
-	
-	{$cell_grid_headcell_field5}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$estado_class}
 			"
 
 			data-field="estado"
 	
-	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN estado_fieldheadercolumn}
 	{BEGIN estado_fieldheader}
-	<SPAN {$estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="estado">
+	<SPAN {$estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="estado">
 	{$label cargo estado }	{$arrow_icon_estado}
 	</SPAN>
 	{END estado_fieldheader}
@@ -777,7 +690,7 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field5}
+	{END cellblock_grid_headcell_field4}
 							</tr>
 					 
 					 
@@ -955,35 +868,12 @@
 	{$cell_grid_cell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$Directivo_class}
-			"
-
-			data-field="Directivo"
-	
-	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Directivo_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Directivo" data-default-width >
-{$Directivo_value}
-</span>
-{END Directivo_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field4}
-				 
-					{BEGIN cellblock_grid_cell_field5}
-	<td
-	
-	{$cell_grid_cell_field5}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$estado_class}
 			"
 
 			data-field="estado"
 	
-	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -993,7 +883,7 @@
 </span>
 {END estado_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field5}
+	{END cellblock_grid_cell_field4}
 							</tr>
 					 
 					
@@ -1121,22 +1011,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field4}
-				 
-					{BEGIN cellblock_grid_footcell_field5}
-	<td
-	
-	{$cell_grid_footcell_field5}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="cargo_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field5}
 							</tr>
 					
 					</tfoot>

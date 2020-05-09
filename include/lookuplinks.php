@@ -54,27 +54,6 @@ function InitLookupLinks()
 			$lookupTableLinks["dependencias_001"]["dependencia.id_depto_superior"] = array();
 		}
 		$lookupTableLinks["dependencias_001"]["dependencia.id_depto_superior"]["edit"] = array("table" => "dependencia", "field" => "id_depto_superior", "page" => "edit");
-		if( !isset( $lookupTableLinks["tparam_estados"] ) ) {
-			$lookupTableLinks["tparam_estados"] = array();
-		}
-		if( !isset( $lookupTableLinks["tparam_estados"]["cargo.estado"] )) {
-			$lookupTableLinks["tparam_estados"]["cargo.estado"] = array();
-		}
-		$lookupTableLinks["tparam_estados"]["cargo.estado"]["edit"] = array("table" => "cargo", "field" => "estado", "page" => "edit");
-		if( !isset( $lookupTableLinks["comportamental"] ) ) {
-			$lookupTableLinks["comportamental"] = array();
-		}
-		if( !isset( $lookupTableLinks["comportamental"]["cargo.idComportamentalFK"] )) {
-			$lookupTableLinks["comportamental"]["cargo.idComportamentalFK"] = array();
-		}
-		$lookupTableLinks["comportamental"]["cargo.idComportamentalFK"]["edit"] = array("table" => "cargo", "field" => "idComportamentalFK", "page" => "edit");
-		if( !isset( $lookupTableLinks["tparam_sn"] ) ) {
-			$lookupTableLinks["tparam_sn"] = array();
-		}
-		if( !isset( $lookupTableLinks["tparam_sn"]["cargo.Directivo"] )) {
-			$lookupTableLinks["tparam_sn"]["cargo.Directivo"] = array();
-		}
-		$lookupTableLinks["tparam_sn"]["cargo.Directivo"]["edit"] = array("table" => "cargo", "field" => "Directivo", "page" => "edit");
 		if( !isset( $lookupTableLinks["cargo"] ) ) {
 			$lookupTableLinks["cargo"] = array();
 		}
@@ -194,6 +173,13 @@ function InitLookupLinks()
 			$lookupTableLinks["global_rol_c"]["global_users.global_rol_contratos"] = array();
 		}
 		$lookupTableLinks["global_rol_c"]["global_users.global_rol_contratos"]["edit"] = array("table" => "global_users", "field" => "global_rol_contratos", "page" => "edit");
+		if( !isset( $lookupTableLinks["tparam_estados"] ) ) {
+			$lookupTableLinks["tparam_estados"] = array();
+		}
+		if( !isset( $lookupTableLinks["tparam_estados"]["cargo.estado"] )) {
+			$lookupTableLinks["tparam_estados"]["cargo.estado"] = array();
+		}
+		$lookupTableLinks["tparam_estados"]["cargo.estado"]["edit"] = array("table" => "cargo", "field" => "estado", "page" => "edit");
 }
 
 ?>

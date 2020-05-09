@@ -367,10 +367,6 @@ class AuditTrailTable
 		{
 			return true;
 		}
-		if($table=="cargo")
-		{
-			return true;
-		}
 		if($table=="tparam_sn")
 		{
 			return true;
@@ -568,6 +564,10 @@ class AuditTrailTable
 			return false;
 		}
 		if($table=="tparam_tipo_ct_arl")
+		{
+			return false;
+		}
+		if($table=="cargo")
 		{
 			return false;
 		}
@@ -944,10 +944,6 @@ class AuditTrailFile
 		{
 			return true;
 		}
-		if($table=="cargo")
-		{
-			return true;
-		}
 		if($table=="tparam_sn")
 		{
 			return true;
@@ -1145,6 +1141,10 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="tparam_tipo_ct_arl")
+		{
+			return false;
+		}
+		if($table=="cargo")
 		{
 			return false;
 		}

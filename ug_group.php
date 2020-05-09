@@ -18,7 +18,6 @@ $nonAdminTablesArr = array();
 $nonAdminTablesArr[] = "dependencias_001";
 $nonAdminTablesArr[] = "dependencia";
 $nonAdminTablesArr[] = "tparam_estados";
-$nonAdminTablesArr[] = "cargo";
 $nonAdminTablesArr[] = "tparam_sn";
 $nonAdminTablesArr[] = "funcionario";
 $nonAdminTablesArr[] = "nombramiento";
@@ -66,6 +65,7 @@ $nonAdminTablesArr[] = "tparam_estcivil";
 $nonAdminTablesArr[] = "tparam_fondopension";
 $nonAdminTablesArr[] = "tparam_fondosalud";
 $nonAdminTablesArr[] = "tparam_tipo_ct_arl";
+$nonAdminTablesArr[] = "cargo";
 
 $ug_connection = $cman->getForUserGroups();
 

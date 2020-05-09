@@ -644,9 +644,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "170_1585711675";
+$projectBuildKey = "174_1589041910";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "170";
+$projectBuildNumber = "174";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -670,7 +670,6 @@ $tableCaptions["Spanish"][""] = "";
 $tableCaptions["Spanish"]["dependencias_001"] = "Dependencias 001";
 $tableCaptions["Spanish"]["dependencia"] = "Dependencia";
 $tableCaptions["Spanish"]["tparam_estados"] = "Tparam Estados";
-$tableCaptions["Spanish"]["cargo"] = "Cargo";
 $tableCaptions["Spanish"]["tparam_sn"] = "Tparam Sn";
 $tableCaptions["Spanish"]["funcionario"] = "Funcionario";
 $tableCaptions["Spanish"]["nombramiento"] = "Nombramiento";
@@ -721,6 +720,7 @@ $tableCaptions["Spanish"]["tparam_estcivil"] = "Tparam Estcivil";
 $tableCaptions["Spanish"]["tparam_fondopension"] = "Tparam Fondopension";
 $tableCaptions["Spanish"]["tparam_fondosalud"] = "Tparam Fondosalud";
 $tableCaptions["Spanish"]["tparam_tipo_ct_arl"] = "Tparam Tipo Ct Arl";
+$tableCaptions["Spanish"]["cargo"] = "Cargo";
 
 
 $globalEvents = new class_GlobalEvents;

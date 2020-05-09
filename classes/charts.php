@@ -496,8 +496,6 @@ class Chart
 			return true;
 		if("tparam_estados" == $this->chrt_array['tables'][0])
 			return true;
-		if("cargo" == $this->chrt_array['tables'][0])
-			return true;
 		if("tparam_sn" == $this->chrt_array['tables'][0])
 			return true;
 		if("funcionario" == $this->chrt_array['tables'][0])
@@ -597,6 +595,8 @@ class Chart
 		if("tparam_fondosalud" == $this->chrt_array['tables'][0])
 			return true;
 		if("tparam_tipo_ct_arl" == $this->chrt_array['tables'][0])
+			return true;
+		if("cargo" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

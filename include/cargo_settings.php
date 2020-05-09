@@ -9,11 +9,11 @@ $tdatacargo[".OwnerID"] = "";
 $tdatacargo[".OriginalTable"] = "cargo";
 
 
-$tdatacargo[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
+$tdatacargo[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
 $tdatacargo[".originalPagesByType"] = $tdatacargo[".pagesByType"];
-$tdatacargo[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
+$tdatacargo[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
 $tdatacargo[".originalPages"] = $tdatacargo[".pages"];
-$tdatacargo[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}" );
+$tdatacargo[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}" );
 $tdatacargo[".originalDefaultPages"] = $tdatacargo[".defaultPages"];
 
 //	field labels
@@ -34,30 +34,16 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscargo["Spanish"]["nombre"] = "Nombre del cargo";
 	$fieldToolTipscargo["Spanish"]["nombre"] = "";
 	$placeHolderscargo["Spanish"]["nombre"] = "";
-	$fieldLabelscargo["Spanish"]["cargo"] = "Cod. Cargo";
+	$fieldLabelscargo["Spanish"]["cargo"] = "Cargo";
 	$fieldToolTipscargo["Spanish"]["cargo"] = "";
 	$placeHolderscargo["Spanish"]["cargo"] = "";
-	$fieldLabelscargo["Spanish"]["grado"] = "Cod. Grado";
+	$fieldLabelscargo["Spanish"]["grado"] = "Grado";
 	$fieldToolTipscargo["Spanish"]["grado"] = "";
 	$placeHolderscargo["Spanish"]["grado"] = "";
 	$fieldLabelscargo["Spanish"]["estado"] = "Estado";
 	$fieldToolTipscargo["Spanish"]["estado"] = "";
 	$placeHolderscargo["Spanish"]["estado"] = "";
-	$fieldLabelscargo["Spanish"]["propositoPrincipal"] = "Proposito Principal";
-	$fieldToolTipscargo["Spanish"]["propositoPrincipal"] = "";
-	$placeHolderscargo["Spanish"]["propositoPrincipal"] = "";
-	$fieldLabelscargo["Spanish"]["codcar"] = "Codcar";
-	$fieldToolTipscargo["Spanish"]["codcar"] = "";
-	$placeHolderscargo["Spanish"]["codcar"] = "";
-	$fieldLabelscargo["Spanish"]["idComportamentalFK"] = "Id Comportamental FK";
-	$fieldToolTipscargo["Spanish"]["idComportamentalFK"] = "";
-	$placeHolderscargo["Spanish"]["idComportamentalFK"] = "";
-	$fieldLabelscargo["Spanish"]["ExperienciaMeses"] = "Experiencia Meses";
-	$fieldToolTipscargo["Spanish"]["ExperienciaMeses"] = "";
-	$placeHolderscargo["Spanish"]["ExperienciaMeses"] = "";
-	$fieldLabelscargo["Spanish"]["Directivo"] = "Directivo";
-	$fieldToolTipscargo["Spanish"]["Directivo"] = "";
-	$placeHolderscargo["Spanish"]["Directivo"] = "";
+	$pageTitlescargo["Spanish"]["add"] = "Cargos en la entidad";
 	if (count($fieldToolTipscargo["Spanish"]))
 		$tdatacargo[".isUseToolTips"] = true;
 }
@@ -94,9 +80,9 @@ $tdatacargo[".listAjax"] = false;
 //	temporary
 $tdatacargo[".listAjax"] = false;
 
-	$tdatacargo[".audit"] = true;
+	$tdatacargo[".audit"] = false;
 
-	$tdatacargo[".locking"] = true;
+	$tdatacargo[".locking"] = false;
 
 
 $pages = $tdatacargo[".defaultPages"];
@@ -172,7 +158,7 @@ $tdatacargo[".addPageEvents"] = false;
 $tdatacargo[".isUseTimeForSearch"] = false;
 
 
-$tdatacargo[".badgeColor"] = "8FBC8B";
+$tdatacargo[".badgeColor"] = "D2691E";
 
 
 $tdatacargo[".allSearchFields"] = array();
@@ -185,11 +171,6 @@ $tdatacargo[".googleLikeFields"][] = "nombre";
 $tdatacargo[".googleLikeFields"][] = "cargo";
 $tdatacargo[".googleLikeFields"][] = "grado";
 $tdatacargo[".googleLikeFields"][] = "estado";
-$tdatacargo[".googleLikeFields"][] = "propositoPrincipal";
-$tdatacargo[".googleLikeFields"][] = "codcar";
-$tdatacargo[".googleLikeFields"][] = "idComportamentalFK";
-$tdatacargo[".googleLikeFields"][] = "ExperienciaMeses";
-$tdatacargo[".googleLikeFields"][] = "Directivo";
 
 
 
@@ -224,7 +205,7 @@ $tdatacargo[".strOrderBy"] = $tstrOrderBy;
 
 $tdatacargo[".orderindexes"] = array();
 
-$tdatacargo[".sqlHead"] = "SELECT id,  	nombre,  	cargo,  	grado,  	estado,  	propositoPrincipal,  	codcar,  	idComportamentalFK,  	ExperienciaMeses,  	Directivo";
+$tdatacargo[".sqlHead"] = "SELECT id,  nombre,  cargo,  grado,  estado";
 $tdatacargo[".sqlFrom"] = "FROM cargo";
 $tdatacargo[".sqlWhereExpr"] = "";
 $tdatacargo[".sqlTail"] = "";
@@ -475,8 +456,7 @@ $tdatacargo[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -500,8 +480,7 @@ $tdatacargo[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 
@@ -612,8 +591,7 @@ $tdatacargo[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -637,8 +615,7 @@ $tdatacargo[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 
@@ -749,8 +726,7 @@ $tdatacargo[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -774,8 +750,7 @@ $tdatacargo[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 
@@ -889,10 +864,9 @@ $tdatacargo[".hideMobileList"] = array();
 	$edata["LookupTable"] = "tparam_estados";
 			$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 4;
+		$edata["LCType"] = 0;
 
-		$edata["HorizontalLookup"] = true;
-
+	
 		
 	$edata["LinkField"] = "estado_id";
 	$edata["LinkFieldType"] = 0;
@@ -910,7 +884,8 @@ $tdatacargo[".hideMobileList"] = array();
 
 	
 	
-	
+		$edata["SelectSize"] = 1;
+
 // End Lookup Settings
 
 
@@ -983,736 +958,6 @@ $tdatacargo[".hideMobileList"] = array();
 
 	$tdatacargo["estado"] = $fdata;
 		$tdatacargo[".searchableFields"][] = "estado";
-//	propositoPrincipal
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 6;
-	$fdata["strName"] = "propositoPrincipal";
-	$fdata["GoodName"] = "propositoPrincipal";
-	$fdata["ownerTable"] = "cargo";
-	$fdata["Label"] = GetFieldLabel("cargo","propositoPrincipal");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "propositoPrincipal";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "propositoPrincipal";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatacargo["propositoPrincipal"] = $fdata;
-		$tdatacargo[".searchableFields"][] = "propositoPrincipal";
-//	codcar
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 7;
-	$fdata["strName"] = "codcar";
-	$fdata["GoodName"] = "codcar";
-	$fdata["ownerTable"] = "cargo";
-	$fdata["Label"] = GetFieldLabel("cargo","codcar");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "codcar";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "codcar";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=15";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatacargo["codcar"] = $fdata;
-		$tdatacargo[".searchableFields"][] = "codcar";
-//	idComportamentalFK
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 8;
-	$fdata["strName"] = "idComportamentalFK";
-	$fdata["GoodName"] = "idComportamentalFK";
-	$fdata["ownerTable"] = "cargo";
-	$fdata["Label"] = GetFieldLabel("cargo","idComportamentalFK");
-	$fdata["FieldType"] = 3;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "idComportamentalFK";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "idComportamentalFK";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Lookup wizard");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-// Begin Lookup settings
-				$edata["LookupType"] = 1;
-	$edata["LookupTable"] = "comportamental";
-	$edata["LookupConnId"] = "edl_at_localhost";
-			$edata["autoCompleteFieldsOnEdit"] = 0;
-	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
-
-	
-		
-	$edata["LinkField"] = "id";
-	$edata["LinkFieldType"] = 3;
-	$edata["DisplayField"] = "id";
-
-	
-
-	
-	$edata["LookupOrderBy"] = "";
-
-	
-	
-	
-		$edata["SimpleAdd"] = true;
-
-
-	
-	
-		$edata["SelectSize"] = 1;
-
-// End Lookup Settings
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatacargo["idComportamentalFK"] = $fdata;
-		$tdatacargo[".searchableFields"][] = "idComportamentalFK";
-//	ExperienciaMeses
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 9;
-	$fdata["strName"] = "ExperienciaMeses";
-	$fdata["GoodName"] = "ExperienciaMeses";
-	$fdata["ownerTable"] = "cargo";
-	$fdata["Label"] = GetFieldLabel("cargo","ExperienciaMeses");
-	$fdata["FieldType"] = 14;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "ExperienciaMeses";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "ExperienciaMeses";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 0;
-
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatacargo["ExperienciaMeses"] = $fdata;
-		$tdatacargo[".searchableFields"][] = "ExperienciaMeses";
-//	Directivo
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 10;
-	$fdata["strName"] = "Directivo";
-	$fdata["GoodName"] = "Directivo";
-	$fdata["ownerTable"] = "cargo";
-	$fdata["Label"] = GetFieldLabel("cargo","Directivo");
-	$fdata["FieldType"] = 16;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "Directivo";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Directivo";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Lookup wizard");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-// Begin Lookup settings
-				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "tparam_sn";
-			$edata["autoCompleteFieldsOnEdit"] = 0;
-	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 4;
-
-		$edata["HorizontalLookup"] = true;
-
-		
-	$edata["LinkField"] = "estadosn_id";
-	$edata["LinkFieldType"] = 16;
-	$edata["DisplayField"] = "estadosn_name";
-
-	
-
-	
-	$edata["LookupOrderBy"] = "";
-
-	
-	
-	
-	
-
-	
-	
-	
-// End Lookup Settings
-
-
-		$edata["IsRequired"] = true;
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatacargo["Directivo"] = $fdata;
-		$tdatacargo[".searchableFields"][] = "Directivo";
 
 
 $tables_data["cargo"]=&$tdatacargo;
@@ -1748,7 +993,7 @@ function createSqlQuery_cargo()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id,  	nombre,  	cargo,  	grado,  	estado,  	propositoPrincipal,  	codcar,  	idComportamentalFK,  	ExperienciaMeses,  	Directivo";
+$proto0["m_strFieldList"] = "id,  nombre,  cargo,  grado,  estado";
 $proto0["m_strFrom"] = "FROM cargo";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1858,116 +1103,46 @@ $proto14["m_alias"] = "";
 $obj = new SQLFieldListItem($proto14);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto16=array();
-			$obj = new SQLField(array(
-	"m_strName" => "propositoPrincipal",
-	"m_strTable" => "cargo",
-	"m_srcTableName" => "cargo"
-));
-
-$proto16["m_sql"] = "propositoPrincipal";
-$proto16["m_srcTableName"] = "cargo";
-$proto16["m_expr"]=$obj;
-$proto16["m_alias"] = "";
-$obj = new SQLFieldListItem($proto16);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto18=array();
-			$obj = new SQLField(array(
-	"m_strName" => "codcar",
-	"m_strTable" => "cargo",
-	"m_srcTableName" => "cargo"
-));
-
-$proto18["m_sql"] = "codcar";
-$proto18["m_srcTableName"] = "cargo";
-$proto18["m_expr"]=$obj;
-$proto18["m_alias"] = "";
-$obj = new SQLFieldListItem($proto18);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto20=array();
-			$obj = new SQLField(array(
-	"m_strName" => "idComportamentalFK",
-	"m_strTable" => "cargo",
-	"m_srcTableName" => "cargo"
-));
-
-$proto20["m_sql"] = "idComportamentalFK";
-$proto20["m_srcTableName"] = "cargo";
-$proto20["m_expr"]=$obj;
-$proto20["m_alias"] = "";
-$obj = new SQLFieldListItem($proto20);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto22=array();
-			$obj = new SQLField(array(
-	"m_strName" => "ExperienciaMeses",
-	"m_strTable" => "cargo",
-	"m_srcTableName" => "cargo"
-));
-
-$proto22["m_sql"] = "ExperienciaMeses";
-$proto22["m_srcTableName"] = "cargo";
-$proto22["m_expr"]=$obj;
-$proto22["m_alias"] = "";
-$obj = new SQLFieldListItem($proto22);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto24=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Directivo",
-	"m_strTable" => "cargo",
-	"m_srcTableName" => "cargo"
-));
-
-$proto24["m_sql"] = "Directivo";
-$proto24["m_srcTableName"] = "cargo";
-$proto24["m_expr"]=$obj;
-$proto24["m_alias"] = "";
-$obj = new SQLFieldListItem($proto24);
-
-$proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto26=array();
-$proto26["m_link"] = "SQLL_MAIN";
-			$proto27=array();
-$proto27["m_strName"] = "cargo";
-$proto27["m_srcTableName"] = "cargo";
-$proto27["m_columns"] = array();
-$proto27["m_columns"][] = "id";
-$proto27["m_columns"][] = "nombre";
-$proto27["m_columns"][] = "cargo";
-$proto27["m_columns"][] = "grado";
-$proto27["m_columns"][] = "estado";
-$proto27["m_columns"][] = "propositoPrincipal";
-$proto27["m_columns"][] = "codcar";
-$proto27["m_columns"][] = "idComportamentalFK";
-$proto27["m_columns"][] = "ExperienciaMeses";
-$proto27["m_columns"][] = "Directivo";
-$obj = new SQLTable($proto27);
+												$proto16=array();
+$proto16["m_link"] = "SQLL_MAIN";
+			$proto17=array();
+$proto17["m_strName"] = "cargo";
+$proto17["m_srcTableName"] = "cargo";
+$proto17["m_columns"] = array();
+$proto17["m_columns"][] = "id";
+$proto17["m_columns"][] = "nombre";
+$proto17["m_columns"][] = "cargo";
+$proto17["m_columns"][] = "grado";
+$proto17["m_columns"][] = "estado";
+$proto17["m_columns"][] = "propositoPrincipal";
+$proto17["m_columns"][] = "codcar";
+$proto17["m_columns"][] = "idComportamentalFK";
+$proto17["m_columns"][] = "ExperienciaMeses";
+$proto17["m_columns"][] = "Directivo";
+$obj = new SQLTable($proto17);
 
-$proto26["m_table"] = $obj;
-$proto26["m_sql"] = "cargo";
-$proto26["m_alias"] = "";
-$proto26["m_srcTableName"] = "cargo";
-$proto28=array();
-$proto28["m_sql"] = "";
-$proto28["m_uniontype"] = "SQLL_UNKNOWN";
+$proto16["m_table"] = $obj;
+$proto16["m_sql"] = "cargo";
+$proto16["m_alias"] = "";
+$proto16["m_srcTableName"] = "cargo";
+$proto18=array();
+$proto18["m_sql"] = "";
+$proto18["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto28["m_column"]=$obj;
-$proto28["m_contained"] = array();
-$proto28["m_strCase"] = "";
-$proto28["m_havingmode"] = false;
-$proto28["m_inBrackets"] = false;
-$proto28["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto28);
+$proto18["m_column"]=$obj;
+$proto18["m_contained"] = array();
+$proto18["m_strCase"] = "";
+$proto18["m_havingmode"] = false;
+$proto18["m_inBrackets"] = false;
+$proto18["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto18);
 
-$proto26["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto26);
+$proto16["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto16);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -1983,7 +1158,7 @@ $queryData_cargo = createSqlQuery_cargo();
 	
 								;
 
-										
+					
 
 $tdatacargo[".sqlquery"] = $queryData_cargo;
 

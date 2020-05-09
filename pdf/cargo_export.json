@@ -119,9 +119,6 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_export_field4}","text":{$estado_pdfvalue}},
 				
-				
-			{"hidden":"{$item_hide_export_field9}","text":{$Directivo_pdfvalue}},
-				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

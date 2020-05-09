@@ -3105,8 +3105,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "dependencia" ] = "dependencia";
 	$projectEntities[ "tparam_estados" ] = array( "url" => "tparam_estados", "type" => 0 );
 	$projectEntitiesReverse[ "tparam_estados" ] = "tparam_estados";
-	$projectEntities[ "cargo" ] = array( "url" => "cargo", "type" => 0 );
-	$projectEntitiesReverse[ "cargo" ] = "cargo";
 	$projectEntities[ "tparam_sn" ] = array( "url" => "tparam_sn", "type" => 0 );
 	$projectEntitiesReverse[ "tparam_sn" ] = "tparam_sn";
 	$projectEntities[ "funcionario" ] = array( "url" => "funcionario", "type" => 0 );
@@ -3207,6 +3205,8 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "tparam_fondosalud" ] = "tparam_fondosalud";
 	$projectEntities[ "tparam_tipo_ct_arl" ] = array( "url" => "tparam_tipo_ct_arl", "type" => 0 );
 	$projectEntitiesReverse[ "tparam_tipo_ct_arl" ] = "tparam_tipo_ct_arl";
+	$projectEntities[ "cargo" ] = array( "url" => "cargo", "type" => 0 );
+	$projectEntitiesReverse[ "cargo" ] = "cargo";
 }
 
 function findTable( $table ) {

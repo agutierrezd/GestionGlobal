@@ -48,7 +48,6 @@ function DBLookup($sql)
 class tDAL
 {
 	var $tbledl_at_localhost__cargo;
-	var $tbledl_at_localhost__comportamental;
 	var $tbledl_at_localhost__contrato;
 	var $tbledl_at_localhost__dependencia;
 	var $tbledl_at_localhost__dependencias_001;
@@ -109,7 +108,6 @@ class tDAL
 		if($this->lstTables)
 			return;
 		$this->lstTables[] = array("name" => "cargo", "varname" => "edl_at_localhost__cargo", "altvarname" => "cargo", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
-		$this->lstTables[] = array("name" => "comportamental", "varname" => "edl_at_localhost__comportamental", "altvarname" => "comportamental", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
 		$this->lstTables[] = array("name" => "contrato", "varname" => "edl_at_localhost__contrato", "altvarname" => "contrato", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
 		$this->lstTables[] = array("name" => "dependencia", "varname" => "edl_at_localhost__dependencia", "altvarname" => "dependencia", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
 		$this->lstTables[] = array("name" => "dependencias_001", "varname" => "edl_at_localhost__dependencias_001", "altvarname" => "dependencias_001", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");

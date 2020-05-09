@@ -64,23 +64,6 @@ if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("tparam_estados", " " . "Tparam Estados");
-$table = "cargo";
-$mask="";
-if( pageEnabled($table, 'add') || pageEnabled($table, 'inline_add') )
-	$mask .= "A";
-if( pageEnabled($table, 'edit') || pageEnabled($table, 'inline_edit') )
-	$mask .= "E";
-if( pageEnabled($table, 'delete') )
-	$mask .= "D";
-if( pageEnabled($table, 'import') )
-	$mask .= "I";
-if( pageEnabled($table, 'view') || pageEnabled($table, 'list') || pageEnabled($table, 'chart') || pageEnabled($table, 'report') || pageEnabled($table, 'dashboard') )
-	$mask .= "S";
-if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled($table, 'export')  )
-	$mask .= "P";
-
-$pageMask[$table] = $mask;
-$tables[$table] = array("cargo", " " . "Cargo");
 $table = "tparam_sn";
 $mask="";
 if( pageEnabled($table, 'add') || pageEnabled($table, 'inline_add') )
@@ -860,6 +843,23 @@ if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("tparam_tipo_ct_arl", " " . "Tparam Tipo Ct Arl");
+$table = "cargo";
+$mask="";
+if( pageEnabled($table, 'add') || pageEnabled($table, 'inline_add') )
+	$mask .= "A";
+if( pageEnabled($table, 'edit') || pageEnabled($table, 'inline_edit') )
+	$mask .= "E";
+if( pageEnabled($table, 'delete') )
+	$mask .= "D";
+if( pageEnabled($table, 'import') )
+	$mask .= "I";
+if( pageEnabled($table, 'view') || pageEnabled($table, 'list') || pageEnabled($table, 'chart') || pageEnabled($table, 'report') || pageEnabled($table, 'dashboard') )
+	$mask .= "S";
+if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled($table, 'export')  )
+	$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("cargo", " " . "Cargo");
 
 require_once('include/xtempl.php');
 require_once('classes/listpage.php');

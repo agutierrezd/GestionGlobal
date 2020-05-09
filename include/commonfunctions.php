@@ -209,8 +209,6 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("tparam_estados" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
-	if ("cargo" == $shortTName && ($type===false || ($type!==false && $type == 0)))
-		return true;
 	if ("tparam_sn" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("funcionario" == $shortTName && ($type===false || ($type!==false && $type == 0)))
@@ -311,6 +309,8 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("tparam_tipo_ct_arl" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
+	if ("cargo" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
 	return false;
 }
 
@@ -387,15 +387,6 @@ function GetTablesList($pdfMode = false)
 	}
 	if( $tableAvailable ) {
 		$arr[]="tparam_estados";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("cargo");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="cargo";
 	}
 	$tableAvailable = true;
 	if( $checkPermissions ) {
@@ -847,6 +838,15 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="tparam_tipo_ct_arl";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("cargo");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="cargo";
+	}
 	return $arr;
 }
 
@@ -859,7 +859,6 @@ function GetTablesListWithoutSecurity()
 	$arr[]="dependencias_001";
 	$arr[]="dependencia";
 	$arr[]="tparam_estados";
-	$arr[]="cargo";
 	$arr[]="tparam_sn";
 	$arr[]="funcionario";
 	$arr[]="nombramiento";
@@ -910,6 +909,7 @@ function GetTablesListWithoutSecurity()
 	$arr[]="tparam_fondopension";
 	$arr[]="tparam_fondosalud";
 	$arr[]="tparam_tipo_ct_arl";
+	$arr[]="cargo";
 	return $arr;
 }
 
@@ -1693,12 +1693,6 @@ function GetUserPermissionsStatic( $table )
 		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
-	if( $table=="cargo" )
-	{
-//	default permissions
-		// grant all by default
-		return "ADESPI".$extraPerm;
-	}
 	if( $table=="tparam_sn" )
 	{
 //	default permissions
@@ -1994,6 +1988,12 @@ function GetUserPermissionsStatic( $table )
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_tipo_ct_arl" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="cargo" )
 	{
 //	default permissions
 		// grant all by default

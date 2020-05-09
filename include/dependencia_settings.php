@@ -263,7 +263,8 @@ $tdatadependencia[".hideMobileList"] = array();
 	$fdata["FieldType"] = 3;
 
 	
-	
+		$fdata["AutoInc"] = true;
+
 	
 			
 

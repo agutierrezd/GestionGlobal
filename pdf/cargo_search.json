@@ -131,21 +131,6 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field4}","text":{$estado_pdfvalue}},
 				
-				
-			{"hidden":"{$item_hide_integrated_search_field5}","text":{$propositoPrincipal_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_integrated_search_field6}","text":{$codcar_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_integrated_search_field7}","text":{$idComportamentalFK_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_integrated_search_field8}","text":{$ExperienciaMeses_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_integrated_search_field9}","text":{$Directivo_pdfvalue}},
-				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
