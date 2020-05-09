@@ -551,6 +551,26 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="tparam_cajacomp")
+		{
+			return false;
+		}
+		if($table=="tparam_estcivil")
+		{
+			return false;
+		}
+		if($table=="tparam_fondopension")
+		{
+			return false;
+		}
+		if($table=="tparam_fondosalud")
+		{
+			return false;
+		}
+		if($table=="tparam_tipo_ct_arl")
+		{
+			return false;
+		}
 	}
 	
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -1105,6 +1125,26 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="tparam_tiporubro")
+		{
+			return false;
+		}
+		if($table=="tparam_cajacomp")
+		{
+			return false;
+		}
+		if($table=="tparam_estcivil")
+		{
+			return false;
+		}
+		if($table=="tparam_fondopension")
+		{
+			return false;
+		}
+		if($table=="tparam_fondosalud")
+		{
+			return false;
+		}
+		if($table=="tparam_tipo_ct_arl")
 		{
 			return false;
 		}

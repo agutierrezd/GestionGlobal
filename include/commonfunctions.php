@@ -301,6 +301,16 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("tparam_tiporubro" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
+	if ("tparam_cajacomp" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("tparam_estcivil" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("tparam_fondopension" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("tparam_fondosalud" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("tparam_tipo_ct_arl" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
 	return false;
 }
 
@@ -792,6 +802,51 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="tparam_tiporubro";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("tparam_cajacomp");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="tparam_cajacomp";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("tparam_estcivil");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="tparam_estcivil";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("tparam_fondopension");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="tparam_fondopension";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("tparam_fondosalud");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="tparam_fondosalud";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("tparam_tipo_ct_arl");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="tparam_tipo_ct_arl";
+	}
 	return $arr;
 }
 
@@ -850,6 +905,11 @@ function GetTablesListWithoutSecurity()
 	$arr[]="q_graph_002";
 	$arr[]="Dashboard";
 	$arr[]="tparam_tiporubro";
+	$arr[]="tparam_cajacomp";
+	$arr[]="tparam_estcivil";
+	$arr[]="tparam_fondopension";
+	$arr[]="tparam_fondosalud";
+	$arr[]="tparam_tipo_ct_arl";
 	return $arr;
 }
 
@@ -1904,6 +1964,36 @@ function GetUserPermissionsStatic( $table )
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_tiporubro" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="tparam_cajacomp" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="tparam_estcivil" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="tparam_fondopension" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="tparam_fondosalud" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="tparam_tipo_ct_arl" )
 	{
 //	default permissions
 		// grant all by default

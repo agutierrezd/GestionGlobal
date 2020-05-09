@@ -61,6 +61,11 @@ $nonAdminTablesArr[] = "q_graph_001";
 $nonAdminTablesArr[] = "q_graph_002";
 $nonAdminTablesArr[] = "Dashboard";
 $nonAdminTablesArr[] = "tparam_tiporubro";
+$nonAdminTablesArr[] = "tparam_cajacomp";
+$nonAdminTablesArr[] = "tparam_estcivil";
+$nonAdminTablesArr[] = "tparam_fondopension";
+$nonAdminTablesArr[] = "tparam_fondosalud";
+$nonAdminTablesArr[] = "tparam_tipo_ct_arl";
 
 $ug_connection = $cman->getForUserGroups();
 

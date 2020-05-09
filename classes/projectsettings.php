@@ -3197,6 +3197,16 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "dashboard" ] = "Dashboard";
 	$projectEntities[ "tparam_tiporubro" ] = array( "url" => "tparam_tiporubro", "type" => 0 );
 	$projectEntitiesReverse[ "tparam_tiporubro" ] = "tparam_tiporubro";
+	$projectEntities[ "tparam_cajacomp" ] = array( "url" => "tparam_cajacomp", "type" => 0 );
+	$projectEntitiesReverse[ "tparam_cajacomp" ] = "tparam_cajacomp";
+	$projectEntities[ "tparam_estcivil" ] = array( "url" => "tparam_estcivil", "type" => 0 );
+	$projectEntitiesReverse[ "tparam_estcivil" ] = "tparam_estcivil";
+	$projectEntities[ "tparam_fondopension" ] = array( "url" => "tparam_fondopension", "type" => 0 );
+	$projectEntitiesReverse[ "tparam_fondopension" ] = "tparam_fondopension";
+	$projectEntities[ "tparam_fondosalud" ] = array( "url" => "tparam_fondosalud", "type" => 0 );
+	$projectEntitiesReverse[ "tparam_fondosalud" ] = "tparam_fondosalud";
+	$projectEntities[ "tparam_tipo_ct_arl" ] = array( "url" => "tparam_tipo_ct_arl", "type" => 0 );
+	$projectEntitiesReverse[ "tparam_tipo_ct_arl" ] = "tparam_tipo_ct_arl";
 }
 
 function findTable( $table ) {

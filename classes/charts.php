@@ -588,6 +588,16 @@ class Chart
 			return true;
 		if("tparam_tiporubro" == $this->chrt_array['tables'][0])
 			return true;
+		if("tparam_cajacomp" == $this->chrt_array['tables'][0])
+			return true;
+		if("tparam_estcivil" == $this->chrt_array['tables'][0])
+			return true;
+		if("tparam_fondopension" == $this->chrt_array['tables'][0])
+			return true;
+		if("tparam_fondosalud" == $this->chrt_array['tables'][0])
+			return true;
+		if("tparam_tipo_ct_arl" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

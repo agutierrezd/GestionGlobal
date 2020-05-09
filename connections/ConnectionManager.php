@@ -463,6 +463,11 @@ class ConnectionManager
 		$connectionsIds["q_graph_001"] = "sep2_at_localhost";
 		$connectionsIds["q_graph_002"] = "sep2_at_localhost";
 		$connectionsIds["tparam_tiporubro"] = "sep2_at_localhost";
+		$connectionsIds["tparam_cajacomp"] = "dbct_at_localhost";
+		$connectionsIds["tparam_estcivil"] = "dbct_at_localhost";
+		$connectionsIds["tparam_fondopension"] = "dbct_at_localhost";
+		$connectionsIds["tparam_fondosalud"] = "dbct_at_localhost";
+		$connectionsIds["tparam_tipo_ct_arl"] = "dbct_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	
