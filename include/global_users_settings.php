@@ -2397,7 +2397,7 @@ $tdataglobal_users[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -2422,19 +2422,17 @@ $tdataglobal_users[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 							
-	
+		$edata["autoUpdatable"] = true;
+
 	//	End validation
 
 	
@@ -2667,7 +2665,7 @@ $tdataglobal_users[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -2692,11 +2690,8 @@ $tdataglobal_users[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=4";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -2704,7 +2699,8 @@ $tdataglobal_users[".hideMobileList"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
 	
-	
+		$edata["autoUpdatable"] = true;
+
 	//	End validation
 
 	
@@ -4740,7 +4736,7 @@ $tdataglobal_users[".hideMobileList"] = array();
 
 	
 		
-	$edata["LinkField"] = "id";
+	$edata["LinkField"] = "id_rol";
 	$edata["LinkFieldType"] = 3;
 	$edata["DisplayField"] = "rol_name";
 
@@ -10151,8 +10147,7 @@ $tdataglobal_users[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -10176,8 +10171,7 @@ $tdataglobal_users[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 
@@ -12926,7 +12920,8 @@ $queryData_global_users = createSqlQuery_global_users();
 
 $tdataglobal_users[".sqlquery"] = $queryData_global_users;
 
-$tableEvents["global_users"] = new eventsBase;
-$tdataglobal_users[".hasEvents"] = false;
+include_once(getabspath("include/global_users_events.php"));
+$tableEvents["global_users"] = new eventclass_global_users;
+$tdataglobal_users[".hasEvents"] = true;
 
 ?>

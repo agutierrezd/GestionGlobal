@@ -180,6 +180,27 @@ function InitLookupLinks()
 			$lookupTableLinks["tparam_estados"]["cargo.estado"] = array();
 		}
 		$lookupTableLinks["tparam_estados"]["cargo.estado"]["edit"] = array("table" => "cargo", "field" => "estado", "page" => "edit");
+		if( !isset( $lookupTableLinks["contractor_master"] ) ) {
+			$lookupTableLinks["contractor_master"] = array();
+		}
+		if( !isset( $lookupTableLinks["contractor_master"]["global_users_contratistas.usr_personalid"] )) {
+			$lookupTableLinks["contractor_master"]["global_users_contratistas.usr_personalid"] = array();
+		}
+		$lookupTableLinks["contractor_master"]["global_users_contratistas.usr_personalid"]["edit"] = array("table" => "global_users_contratistas", "field" => "usr_personalid", "page" => "edit");
+		if( !isset( $lookupTableLinks["global_rol_almacen"] ) ) {
+			$lookupTableLinks["global_rol_almacen"] = array();
+		}
+		if( !isset( $lookupTableLinks["global_rol_almacen"]["global_users_contratistas.global_rol_almacen"] )) {
+			$lookupTableLinks["global_rol_almacen"]["global_users_contratistas.global_rol_almacen"] = array();
+		}
+		$lookupTableLinks["global_rol_almacen"]["global_users_contratistas.global_rol_almacen"]["edit"] = array("table" => "global_users_contratistas", "field" => "global_rol_almacen", "page" => "edit");
+		if( !isset( $lookupTableLinks["global_rol_c"] ) ) {
+			$lookupTableLinks["global_rol_c"] = array();
+		}
+		if( !isset( $lookupTableLinks["global_rol_c"]["global_users_contratistas.global_rol_contratos"] )) {
+			$lookupTableLinks["global_rol_c"]["global_users_contratistas.global_rol_contratos"] = array();
+		}
+		$lookupTableLinks["global_rol_c"]["global_users_contratistas.global_rol_contratos"]["edit"] = array("table" => "global_users_contratistas", "field" => "global_rol_contratos", "page" => "edit");
 }
 
 ?>

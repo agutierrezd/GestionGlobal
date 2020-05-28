@@ -598,6 +598,10 @@ class Chart
 			return true;
 		if("cargo" == $this->chrt_array['tables'][0])
 			return true;
+		if("global_users" == $this->chrt_array['tables'][0])
+			return true;
+		if("contractor_master" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

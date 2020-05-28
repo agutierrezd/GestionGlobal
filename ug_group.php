@@ -66,6 +66,8 @@ $nonAdminTablesArr[] = "tparam_fondopension";
 $nonAdminTablesArr[] = "tparam_fondosalud";
 $nonAdminTablesArr[] = "tparam_tipo_ct_arl";
 $nonAdminTablesArr[] = "cargo";
+$nonAdminTablesArr[] = "global_users_contratistas";
+$nonAdminTablesArr[] = "contractor_master";
 
 $ug_connection = $cman->getForUserGroups();
 

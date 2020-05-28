@@ -520,14 +520,17 @@ $tdatafuncionario[".hideMobileList"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
 				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
+								$edata["validateAs"]["basicValidate"][] = "DenyDuplicated";
+	$edata["validateAs"]["customMessages"]["DenyDuplicated"] = array("message" => "Documento %value% ya existe!", "messageType" => "Text");
+
 	
 	//	End validation
 
 	
 			
 	
-	
+		$edata["denyDuplicates"] = true;
+
 	
 	$fdata["EditFormats"]["edit"] = $edata;
 //	End Edit Formats
@@ -2376,22 +2379,15 @@ $tdatafuncionario[".hideMobileList"] = array();
 
 	
 	
-				$vdata["ShowThumbnail"] = true;
-	$vdata["ThumbWidth"] = 200;
-	$vdata["ThumbHeight"] = 150;
-	$vdata["ImageWidth"] = 300;
+				$vdata["ImageWidth"] = 300;
 	$vdata["ImageHeight"] = 100;
 
 			$vdata["multipleImgMode"] = 1;
 	$vdata["maxImages"] = 0;
 
-			$vdata["showGallery"] = true;
-	$vdata["galleryMode"] = 2;
-	$vdata["captionMode"] = 2;
-	$vdata["captionField"] = "";
-
-	$vdata["imageBorder"] = 1;
-	$vdata["imageFullWidth"] = 1;
+		
+	$vdata["imageBorder"] = 0;
+	$vdata["imageFullWidth"] = 0;
 
 
 	
@@ -2451,10 +2447,7 @@ $tdatafuncionario[".hideMobileList"] = array();
 	
 	//	End validation
 
-		$edata["CreateThumbnail"] = true;
-	$edata["StrThumbnail"] = "th";
-			$edata["ThumbnailSize"] = 600;
-
+	
 			
 	
 	

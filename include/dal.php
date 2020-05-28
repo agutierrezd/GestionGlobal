@@ -61,6 +61,7 @@ class tDAL
 	var $tbledl_at_localhost__perfil;
 	var $tbledl_at_localhost__tparam_estados;
 	var $tbledl_at_localhost__tparam_sn;
+	var $tbldbct_at_localhost__contractor_master;
 	var $tbldbct_at_localhost__contrato_attached_type;
 	var $tbldbct_at_localhost__contrato_estados;
 	var $tbldbct_at_localhost__contrato_forma_pago;
@@ -121,6 +122,7 @@ class tDAL
 		$this->lstTables[] = array("name" => "perfil", "varname" => "edl_at_localhost__perfil", "altvarname" => "perfil", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
 		$this->lstTables[] = array("name" => "tparam_estados", "varname" => "edl_at_localhost__tparam_estados", "altvarname" => "tparam_estados", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
 		$this->lstTables[] = array("name" => "tparam_sn", "varname" => "edl_at_localhost__tparam_sn", "altvarname" => "tparam_sn", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
+		$this->lstTables[] = array("name" => "contractor_master", "varname" => "dbct_at_localhost__contractor_master", "altvarname" => "contractor_master", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_attached_type", "varname" => "dbct_at_localhost__contrato_attached_type", "altvarname" => "contrato_attached_type", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_estados", "varname" => "dbct_at_localhost__contrato_estados", "altvarname" => "contrato_estados", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_forma_pago", "varname" => "dbct_at_localhost__contrato_forma_pago", "altvarname" => "contrato_forma_pago", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");

@@ -311,6 +311,10 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("cargo" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
+	if ("global_users_contratistas" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("contractor_master" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
 	return false;
 }
 
@@ -847,6 +851,24 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="cargo";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("global_users_contratistas");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="global_users_contratistas";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contractor_master");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contractor_master";
+	}
 	return $arr;
 }
 
@@ -910,6 +932,8 @@ function GetTablesListWithoutSecurity()
 	$arr[]="tparam_fondosalud";
 	$arr[]="tparam_tipo_ct_arl";
 	$arr[]="cargo";
+	$arr[]="global_users_contratistas";
+	$arr[]="contractor_master";
 	return $arr;
 }
 
@@ -1994,6 +2018,18 @@ function GetUserPermissionsStatic( $table )
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="cargo" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="global_users_contratistas" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="contractor_master" )
 	{
 //	default permissions
 		// grant all by default

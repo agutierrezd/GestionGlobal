@@ -468,6 +468,8 @@ class ConnectionManager
 		$connectionsIds["tparam_fondosalud"] = "dbct_at_localhost";
 		$connectionsIds["tparam_tipo_ct_arl"] = "dbct_at_localhost";
 		$connectionsIds["cargo"] = "edl_at_localhost";
+		$connectionsIds["global_users_contratistas"] = "dbusers_at_localhost";
+		$connectionsIds["contractor_master"] = "dbct_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

@@ -3207,6 +3207,10 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "tparam_tipo_ct_arl" ] = "tparam_tipo_ct_arl";
 	$projectEntities[ "cargo" ] = array( "url" => "cargo", "type" => 0 );
 	$projectEntitiesReverse[ "cargo" ] = "cargo";
+	$projectEntities[ "global_users_contratistas" ] = array( "url" => "global_users_contratistas", "type" => 1 );
+	$projectEntitiesReverse[ "global_users_contratistas" ] = "global_users_contratistas";
+	$projectEntities[ "contractor_master" ] = array( "url" => "contractor_master", "type" => 0 );
+	$projectEntitiesReverse[ "contractor_master" ] = "contractor_master";
 }
 
 function findTable( $table ) {

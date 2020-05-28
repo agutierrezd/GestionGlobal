@@ -955,6 +955,14 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return strftime("%Y");
 	}
+				if($table=="global_users" && $field=="usr_status")
+	{
+		return 1;
+	}
+				if($table=="global_users" && $field=="usr_type_vinc")
+	{
+		return 1;
+	}
 				if($table=="global_users" && $field=="sys_user")
 	{
 		return $_SESSION["UserID"];
@@ -972,6 +980,34 @@ function GetDefaultValue($field, $ptype, $table="")
 		return 1;
 	}
 				if($table=="global_users" && $field=="groupid")
+	{
+		return 1;
+	}
+				if($table=="global_users_contratistas" && $field=="usr_status")
+	{
+		return 1;
+	}
+				if($table=="global_users_contratistas" && $field=="usr_type_vinc")
+	{
+		return 2;
+	}
+				if($table=="global_users_contratistas" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="global_users_contratistas" && $field=="sys_date")
+	{
+		return strftime("%Y-%m-%d");
+	}
+				if($table=="global_users_contratistas" && $field=="sys_time")
+	{
+		return strftime("%H:%M:%S");
+	}
+				if($table=="global_users_contratistas" && $field=="active")
+	{
+		return 1;
+	}
+				if($table=="global_users_contratistas" && $field=="groupid")
 	{
 		return 1;
 	}
@@ -990,6 +1026,14 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 	{
 		return strftime("%Y");
 	}
+				if($table=="global_users" && $field=="usr_status")
+	{
+		return 1;
+	}
+				if($table=="global_users" && $field=="usr_type_vinc")
+	{
+		return 1;
+	}
 				if($table=="global_users" && $field=="sys_user")
 	{
 		return $_SESSION["UserID"];
@@ -1007,6 +1051,34 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 		return 1;
 	}
 				if($table=="global_users" && $field=="groupid")
+	{
+		return 1;
+	}
+				if($table=="global_users_contratistas" && $field=="usr_status")
+	{
+		return 1;
+	}
+				if($table=="global_users_contratistas" && $field=="usr_type_vinc")
+	{
+		return 2;
+	}
+				if($table=="global_users_contratistas" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="global_users_contratistas" && $field=="sys_date")
+	{
+		return strftime("%Y-%m-%d");
+	}
+				if($table=="global_users_contratistas" && $field=="sys_time")
+	{
+		return strftime("%H:%M:%S");
+	}
+				if($table=="global_users_contratistas" && $field=="active")
+	{
+		return 1;
+	}
+				if($table=="global_users_contratistas" && $field=="groupid")
 	{
 		return 1;
 	}

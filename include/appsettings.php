@@ -48,6 +48,8 @@ include(getabspath('classes/pdlayout.php'));
 //	custom labels
 $custom_labels = array();
 $custom_labels["Spanish"] = array();
+	$custom_labels["Spanish"]['ADD_NEW'] = "Nuevo funcionario";
+	$custom_labels["Spanish"]['ADD_NEW1'] = "Nuevo usuario";
 
 define('GLOBAL_PAGES_SHORT', ".global");
 define('GLOBAL_PAGES', "<global>");
@@ -644,9 +646,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "175_1589041910";
+$projectBuildKey = "198_1589041910";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "175";
+$projectBuildNumber = "198";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -700,7 +702,7 @@ $tableCaptions["Spanish"]["global_ejecucion"] = "Global Ejecucion";
 $tableCaptions["Spanish"]["global_ejecucion_desagregada"] = "Global Ejecucion Desagregada";
 $tableCaptions["Spanish"]["global_ejecucion_actividades_spi"] = "Global Ejecucion Actividades Spi";
 $tableCaptions["Spanish"]["rep_prg001_catalogopresupuestal"] = "Rep Prg001 Catalogopresupuestal";
-$tableCaptions["Spanish"]["global_users"] = "Global Users";
+$tableCaptions["Spanish"]["global_users"] = "Ususarios y permisos";
 $tableCaptions["Spanish"]["global_rol_almacen"] = "Global Rol Almacen";
 $tableCaptions["Spanish"]["global_rol_c"] = "Global Rol C";
 $tableCaptions["Spanish"]["admin_rights"] = "Admin Rights";
@@ -721,6 +723,8 @@ $tableCaptions["Spanish"]["tparam_fondopension"] = "Tparam Fondopension";
 $tableCaptions["Spanish"]["tparam_fondosalud"] = "Tparam Fondosalud";
 $tableCaptions["Spanish"]["tparam_tipo_ct_arl"] = "Tparam Tipo Ct Arl";
 $tableCaptions["Spanish"]["cargo"] = "Cargo";
+$tableCaptions["Spanish"]["global_users_contratistas"] = "Usuarios y permisos";
+$tableCaptions["Spanish"]["contractor_master"] = "Contractor Master";
 
 
 $globalEvents = new class_GlobalEvents;

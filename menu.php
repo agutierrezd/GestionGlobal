@@ -31,8 +31,12 @@ if (($_SESSION["MyURL"] == "") || (!isLoggedAsGuest())) {
 require_once('include/xtempl.php');
 require_once(getabspath("classes/cipherer.php"));
 
+include_once(getabspath("include/global_users_events.php"));
+$tableEvents["global_users"] = new eventclass_global_users;
 include_once(getabspath("include/ep_agregada_events.php"));
 $tableEvents["ep_agregada"] = new eventclass_ep_agregada;
+include_once(getabspath("include/global_users_contratistas_events.php"));
+$tableEvents["global_users_contratistas"] = new eventclass_global_users_contratistas;
 
 $xt = new Xtempl();
 

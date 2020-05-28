@@ -715,7 +715,39 @@
 	<td class="runner-cr"></td>
 </tr>
 {END item44_menulink}
+
+{BEGIN item45_menulink}
+<tr id="item45" topparent="item43" parent="item43" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf{BEGIN item45_current} current{END item45_current}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		{BEGIN item45_groupimage}
+<span><img alt="*" src="images/plus.gif" class="groupImg"></span>
+{END item45_groupimage}
+<a {$item45_menulink_attrs} {BEGIN item45_current}class="curlink"{END item45_current}>{$item45_title}</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+{END item45_menulink}
 {END item43_menulink}
+
+{BEGIN item46_menulink}
+<tr id="item46" view="topitem" class="runner-b-vmenu runner-vmenu tree Leaf{BEGIN item46_current} current{END item46_current}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		{BEGIN item46_groupimage}
+<span><img alt="*" src="images/plus.gif" class="groupImg"></span>
+{END item46_groupimage}
+<a {$item46_menulink_attrs} {BEGIN item46_current}class="curlink"{END item46_current}>{$item46_title}</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+{END item46_menulink}
 		{BEGIN adminarea_link}
 	<tr id="itemAAS" view="topitem" class="runner-b-vmenu runner-vmenu tree Separator">
 	<td class="runner-cl"></td>	
@@ -1297,11 +1329,39 @@
 
 			</li>
 			{END item44_menulink}
+						
+			{BEGIN item45_menulink}
+			<li parent="group43" class="Leaf{BEGIN item45_current} current{END item45_current}">
+				{BEGIN item45_groupimage}
+<span><img alt="*" src="images/plus.gif" class="groupImg"></span>
+{END item45_groupimage}
+<a {$item45_menulink_attrs} {BEGIN item45_current}class="curlink"{END item45_current}>{$item45_title}</a>
+
+
+
+			</li>
+			{END item45_menulink}
 				</ul>
 	</td>
 	<td class="runner-cr"></td>
 </tr>
 {END item43_menulink}
+
+{BEGIN item46_menulink}
+<tr class="runner-b-vmenu runner-vmenu simple Leaf{BEGIN item46_current} current{END item46_current}">
+	<td class="runner-cl"></td>
+	<td class="runner-cc">
+		{BEGIN item46_groupimage}
+<span><img alt="*" src="images/plus.gif" class="groupImg"></span>
+{END item46_groupimage}
+<a {$item46_menulink_attrs} {BEGIN item46_current}class="curlink"{END item46_current}>{$item46_title}</a>
+
+
+
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+{END item46_menulink}
 		{BEGIN adminarea_link}
 	<tr id="itemAAS" view="topitem" class="runner-b-vmenu runner-vmenu tree Separator">
 	<td class="runner-cl"></td>	

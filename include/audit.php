@@ -571,6 +571,14 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="global_users_contratistas")
+		{
+			return true;
+		}
+		if($table=="contractor_master")
+		{
+			return false;
+		}
 	}
 	
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -1145,6 +1153,14 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="cargo")
+		{
+			return false;
+		}
+		if($table=="global_users_contratistas")
+		{
+			return true;
+		}
+		if($table=="contractor_master")
 		{
 			return false;
 		}

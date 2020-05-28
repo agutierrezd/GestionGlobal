@@ -409,9 +409,32 @@
 
 				</li>
 				{END item44_menulink}
+									
+				{BEGIN item45_menulink}
+				<li id="item45" parent="group43" class="Leaf{BEGIN item45_current} current{END item45_current}">
+					&nbsp;<a {$item45_menulink_attrs} {BEGIN item45_current}class="curlink"{END item45_current}>{$item45_title}</a>&nbsp;
+
+
+				</li>
+				{END item45_menulink}
 						</ul>
 		</td>
 		{END item43_menulink}
+			
+		{BEGIN item46_menulink}
+		<td id="item46" view="topitem" class="Leaf">
+			<table cellpadding="0">
+	<tr class="runner-menutab{BEGIN item46_current} current{END item46_current}">
+		<td class="runner-cl"><img src="images/spacer.gif"></td>
+		<td class="runner-cc">	
+			<a {$item46_menulink_attrs} {BEGIN item46_current}class="curlink"{END item46_current}>{$item46_title}</a>
+		</td>
+		<td class="runner-cr"><img src="images/spacer.gif"></td>
+	</tr>
+</table>	
+
+		</td>
+		{END item46_menulink}
 					{BEGIN adminarea_link}
 		<td id="itemAA" view="topitem" class="Leaf">
 	<table class="runner-c" cellpadding="0">
