@@ -534,10 +534,10 @@ $globalSettings["isDynamicPerm"] = true;
 
 
 $globalSettings["LandingPageType"] = 2;
-$globalSettings["LandingTable"] = "";
-$globalSettings["LandingPage"] = "login";
-$globalSettings["LandingURL"] = "dashboard_dashboard.php";
-$globalSettings["LandingPageId"] = "login";
+$globalSettings["LandingTable"] = "dependencia_det_DIR";
+$globalSettings["LandingPage"] = "list";
+$globalSettings["LandingURL"] = "dependencia_det_dir_list.php?page=list";
+$globalSettings["LandingPageId"] = "list";
 
 $globalSettings["ProjectLogo"] = array();
 $globalSettings["ProjectLogo"]["Spanish"] = "<DIV style=\"position: relative; top: -1px; white-space: nowrap;\">
@@ -546,7 +546,7 @@ $globalSettings["ProjectLogo"]["Spanish"] = "<DIV style=\"position: relative; to
 
 $globalSettings["CookieBanner"] = array();
 
-$globalSettings["useCookieBanner"] = 1 != 0;
+$globalSettings["useCookieBanner"] = 0 != 0;
 
 
 $globalSettings["createLoginPage"] = true;
@@ -605,7 +605,7 @@ $globalSettings["CaptchaSettings"]["secretKey"] = "";
 $globalSettings["CaptchaSettings"]["captchaPassesCount"] = "5";
 
 
-$bsProjectTheme = "flatly";
+$bsProjectTheme = "default";
 $bsProjectSize = "normal";
 
 $wr_pagestylepath = "OfficeOffice";
@@ -636,7 +636,7 @@ $arrCustomPages = array();
 																					$cUserNameFieldType	= 200;
 												$cPasswordFieldType	= 200;
 												$cEmailFieldType = 200;
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
 $gPermissionsRefreshTime = 0;
 $gPermissionsRead = false;
 
@@ -646,9 +646,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "198_1589041910";
+$projectBuildKey = "259_1592662280";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "198";
+$projectBuildNumber = "259";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -699,8 +699,6 @@ $tableCaptions["Spanish"]["tipo_liquidacion"] = "Tipo Liquidacion";
 $tableCaptions["Spanish"]["vigencia"] = "Vigencia";
 $tableCaptions["Spanish"]["divipola"] = "Divipola";
 $tableCaptions["Spanish"]["global_ejecucion"] = "Global Ejecucion";
-$tableCaptions["Spanish"]["global_ejecucion_desagregada"] = "Global Ejecucion Desagregada";
-$tableCaptions["Spanish"]["global_ejecucion_actividades_spi"] = "Global Ejecucion Actividades Spi";
 $tableCaptions["Spanish"]["rep_prg001_catalogopresupuestal"] = "Rep Prg001 Catalogopresupuestal";
 $tableCaptions["Spanish"]["global_users"] = "Ususarios y permisos";
 $tableCaptions["Spanish"]["global_rol_almacen"] = "Global Rol Almacen";
@@ -724,7 +722,13 @@ $tableCaptions["Spanish"]["tparam_fondosalud"] = "Tparam Fondosalud";
 $tableCaptions["Spanish"]["tparam_tipo_ct_arl"] = "Tparam Tipo Ct Arl";
 $tableCaptions["Spanish"]["cargo"] = "Cargo";
 $tableCaptions["Spanish"]["global_users_contratistas"] = "Usuarios y permisos";
-$tableCaptions["Spanish"]["contractor_master"] = "Contractor Master";
+$tableCaptions["Spanish"]["contractor_master"] = "Base de contratistas";
+$tableCaptions["Spanish"]["dependencia_SJ"] = "Dependencia | Area";
+$tableCaptions["Spanish"]["funcionario_SJ"] = "Funcionarios";
+$tableCaptions["Spanish"]["contractor_master_SJ"] = "Contratistas";
+$tableCaptions["Spanish"]["global_status"] = "Global Status";
+$tableCaptions["Spanish"]["dependencia_det"] = "Dependencia Det";
+$tableCaptions["Spanish"]["dependencia_det_DIR"] = "Secretaría General";
 
 
 $globalEvents = new class_GlobalEvents;
@@ -798,9 +802,9 @@ $scriptname = getFileNameFromURL();
 
 $isGroupSecurity = true;
 
-$isUseRTEBasic = true;
+$isUseRTEBasic = false;
 
-$isUseRTECK = false;
+$isUseRTECK = true;
 
 $isUseRTEInnova = false;
 

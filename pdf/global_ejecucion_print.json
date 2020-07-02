@@ -109,10 +109,6 @@ pdfDocument = {
 					{BEGIN row_grid_2}		
 					"%",
 					{END row_grid_2}
-					
-					{BEGIN row_grid_3}		
-					"%",
-					{END row_grid_3}
 								],
 							
 				body: [
@@ -537,7 +533,7 @@ pdfDocument = {
 {END cellblock_grid_headcell_field11}
 											],
 				{END row_grid_0}
-									
+								
 		{BEGIN grid_row}
 	{BEGIN grid_record}
 				
@@ -857,117 +853,11 @@ pdfDocument = {
 {END cellblock_grid_cell_field11}
 											],
 				{END row_grid_1}
-								{BEGIN row_grid_2}
-				[
-												{BEGIN cellblock_grid_cell_dpreview}
-{
-	cellId: 'cell_dpreview',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-					{BEGIN colspan_grid_cell_dpreview}
-			colSpan: {$colspan_grid_cell_dpreview},
-			{END colspan_grid_cell_dpreview}
-		
-						
-	
-	
-	
-			"stack": [
-		
-				
-			 {BEGIN details_global_ejecucion_desagregada}
-			{$displayDetailTable_global_ejecucion_desagregada }
-		{END details_global_ejecucion_desagregada},
-				
-				
-			 {BEGIN details_global_ejecucion_actividades_spi}
-			{$displayDetailTable_global_ejecucion_actividades_spi }
-		{END details_global_ejecucion_actividades_spi},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_cell_dpreview}
-																		{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  1,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  2,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  3,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  4,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  5,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  6,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  7,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  8,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  9,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  10,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  11,
-				text: ''
-			},
-							],
-				{END row_grid_2}
 						{END grid_record}
 	{END grid_row}
 			
 					
-								{BEGIN row_grid_3}
+							{BEGIN row_grid_2}
 				[
 												{BEGIN cellblock_grid_footcell_field}
 {
@@ -1258,7 +1148,7 @@ pdfDocument = {
 
 {END cellblock_grid_footcell_field11}
 											],
-				{END row_grid_3}
+				{END row_grid_2}
 							
 									]
 			

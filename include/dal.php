@@ -50,6 +50,7 @@ class tDAL
 	var $tbledl_at_localhost__cargo;
 	var $tbledl_at_localhost__contrato;
 	var $tbledl_at_localhost__dependencia;
+	var $tbledl_at_localhost__dependencia_det;
 	var $tbledl_at_localhost__dependencias_001;
 	var $tbledl_at_localhost__funcionario;
 	var $tbledl_at_localhost__gestionglobal_ver_103_audit;
@@ -90,13 +91,12 @@ class tDAL
 	var $tbldbusers_at_localhost__divipola;
 	var $tbldbusers_at_localhost__global_rol_almacen;
 	var $tbldbusers_at_localhost__global_rol_c;
+	var $tbldbusers_at_localhost__global_status;
 	var $tbldbusers_at_localhost__global_users;
 	var $tblsep2_at_localhost__ep_agregada;
 	var $tblsep2_at_localhost__ep_compromisos;
 	var $tblsep2_at_localhost__ep_obligaciones;
 	var $tblsep2_at_localhost__global_ejecucion;
-	var $tblsep2_at_localhost__global_ejecucion_actividades_spi;
-	var $tblsep2_at_localhost__global_ejecucion_desagregada;
 	var $tblsep2_at_localhost__q_graph_001;
 	var $tblsep2_at_localhost__q_graph_002;
 	var $tblsep2_at_localhost__rep_prg001_catalogopresupuestal;
@@ -111,6 +111,7 @@ class tDAL
 		$this->lstTables[] = array("name" => "cargo", "varname" => "edl_at_localhost__cargo", "altvarname" => "cargo", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
 		$this->lstTables[] = array("name" => "contrato", "varname" => "edl_at_localhost__contrato", "altvarname" => "contrato", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
 		$this->lstTables[] = array("name" => "dependencia", "varname" => "edl_at_localhost__dependencia", "altvarname" => "dependencia", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
+		$this->lstTables[] = array("name" => "dependencia_det", "varname" => "edl_at_localhost__dependencia_det", "altvarname" => "dependencia_det", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
 		$this->lstTables[] = array("name" => "dependencias_001", "varname" => "edl_at_localhost__dependencias_001", "altvarname" => "dependencias_001", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
 		$this->lstTables[] = array("name" => "funcionario", "varname" => "edl_at_localhost__funcionario", "altvarname" => "funcionario", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
 		$this->lstTables[] = array("name" => "gestionglobal_ver_103_audit", "varname" => "edl_at_localhost__gestionglobal_ver_103_audit", "altvarname" => "gestionglobal_ver_103_audit", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
@@ -151,13 +152,12 @@ class tDAL
 		$this->lstTables[] = array("name" => "divipola", "varname" => "dbusers_at_localhost__divipola", "altvarname" => "divipola", "connId" => "dbusers_at_localhost", "schema" => "", "connName" => "dbusers at localhost");
 		$this->lstTables[] = array("name" => "global_rol_almacen", "varname" => "dbusers_at_localhost__global_rol_almacen", "altvarname" => "global_rol_almacen", "connId" => "dbusers_at_localhost", "schema" => "", "connName" => "dbusers at localhost");
 		$this->lstTables[] = array("name" => "global_rol_c", "varname" => "dbusers_at_localhost__global_rol_c", "altvarname" => "global_rol_c", "connId" => "dbusers_at_localhost", "schema" => "", "connName" => "dbusers at localhost");
+		$this->lstTables[] = array("name" => "global_status", "varname" => "dbusers_at_localhost__global_status", "altvarname" => "global_status", "connId" => "dbusers_at_localhost", "schema" => "", "connName" => "dbusers at localhost");
 		$this->lstTables[] = array("name" => "global_users", "varname" => "dbusers_at_localhost__global_users", "altvarname" => "global_users", "connId" => "dbusers_at_localhost", "schema" => "", "connName" => "dbusers at localhost");
 		$this->lstTables[] = array("name" => "ep_agregada", "varname" => "sep2_at_localhost__ep_agregada", "altvarname" => "ep_agregada", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
 		$this->lstTables[] = array("name" => "ep_compromisos", "varname" => "sep2_at_localhost__ep_compromisos", "altvarname" => "ep_compromisos", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
 		$this->lstTables[] = array("name" => "ep_obligaciones", "varname" => "sep2_at_localhost__ep_obligaciones", "altvarname" => "ep_obligaciones", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
 		$this->lstTables[] = array("name" => "global_ejecucion", "varname" => "sep2_at_localhost__global_ejecucion", "altvarname" => "global_ejecucion", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
-		$this->lstTables[] = array("name" => "global_ejecucion_actividades_spi", "varname" => "sep2_at_localhost__global_ejecucion_actividades_spi", "altvarname" => "global_ejecucion_actividades_spi", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
-		$this->lstTables[] = array("name" => "global_ejecucion_desagregada", "varname" => "sep2_at_localhost__global_ejecucion_desagregada", "altvarname" => "global_ejecucion_desagregada", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
 		$this->lstTables[] = array("name" => "q_graph_001", "varname" => "sep2_at_localhost__q_graph_001", "altvarname" => "q_graph_001", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
 		$this->lstTables[] = array("name" => "q_graph_002", "varname" => "sep2_at_localhost__q_graph_002", "altvarname" => "q_graph_002", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
 		$this->lstTables[] = array("name" => "rep_prg001_catalogopresupuestal", "varname" => "sep2_at_localhost__rep_prg001_catalogopresupuestal", "altvarname" => "rep_prg001_catalogopresupuestal", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");

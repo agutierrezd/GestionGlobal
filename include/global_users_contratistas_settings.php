@@ -223,10 +223,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsglobal_users_contratistas["Spanish"]["ctrl"] = "Ctrl";
 	$fieldToolTipsglobal_users_contratistas["Spanish"]["ctrl"] = "";
 	$placeHoldersglobal_users_contratistas["Spanish"]["ctrl"] = "";
-	$fieldLabelsglobal_users_contratistas["Spanish"]["usr_dep"] = "CodDep";
+	$fieldLabelsglobal_users_contratistas["Spanish"]["usr_dep"] = "Dependencia";
 	$fieldToolTipsglobal_users_contratistas["Spanish"]["usr_dep"] = "";
 	$placeHoldersglobal_users_contratistas["Spanish"]["usr_dep"] = "";
-	$fieldLabelsglobal_users_contratistas["Spanish"]["usr_cargo"] = "CodCargo";
+	$fieldLabelsglobal_users_contratistas["Spanish"]["usr_cargo"] = "Cargo";
 	$fieldToolTipsglobal_users_contratistas["Spanish"]["usr_cargo"] = "";
 	$placeHoldersglobal_users_contratistas["Spanish"]["usr_cargo"] = "";
 	$fieldLabelsglobal_users_contratistas["Spanish"]["usr_regpago"] = "Usr Regpago";
@@ -9480,7 +9480,7 @@ $tdataglobal_users_contratistas[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Readonly");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -9490,9 +9490,37 @@ $tdataglobal_users_contratistas[".hideMobileList"] = array();
 	
 	
 
-
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "dependencia";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 2;
 
 	
+		
+	$edata["LinkField"] = "id";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "nombre";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+	
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -9513,7 +9541,8 @@ $tdataglobal_users_contratistas[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -9532,7 +9561,7 @@ $tdataglobal_users_contratistas[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -9612,7 +9641,7 @@ $tdataglobal_users_contratistas[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Readonly");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -9622,9 +9651,39 @@ $tdataglobal_users_contratistas[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "cargo";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "nombre";
+
+				$edata["LookupWhereCode"] = true;
 
 
 	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -9645,8 +9704,10 @@ $tdataglobal_users_contratistas[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+		$edata["autoUpdatable"] = true;
+
 	//	End validation
 
 	
@@ -9664,7 +9725,7 @@ $tdataglobal_users_contratistas[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -12860,7 +12921,9 @@ $proto169["m_columns"][] = "sys_update_family_info";
 $proto169["m_columns"][] = "usr_update_almacen";
 $proto169["m_columns"][] = "sys_anio";
 $proto169["m_columns"][] = "ctrl";
+$proto169["m_columns"][] = "usr_directivo";
 $proto169["m_columns"][] = "usr_dep";
+$proto169["m_columns"][] = "usr_dep_sup";
 $proto169["m_columns"][] = "usr_cargo";
 $proto169["m_columns"][] = "usr_regpago";
 $proto169["m_columns"][] = "usr_extension";

@@ -1,8 +1,8 @@
-[data-page=".global_menu"][data-itemid="welcome_item"] > .bs-welcome-header {
-  background-color: #2F4F4F;
+[data-page=".global_menu"][data-itemid="welcome_item2"] > .bs-welcome-header {
+  background-color: #f7f7f7;
 }
-[data-page=".global_menu"][data-itemid="welcome_item1"] > .bs-welcome-header {
-  background-color: #6B8E23;
+[data-page=".global_menu"][data-itemid="welcome_item2"] > .bs-welcome-header > a {
+  color: #000000;
 }
 
 

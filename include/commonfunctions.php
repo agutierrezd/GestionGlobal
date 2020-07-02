@@ -263,10 +263,6 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("global_ejecucion" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
-	if ("global_ejecucion_desagregada" == $shortTName && ($type===false || ($type!==false && $type == 0)))
-		return true;
-	if ("global_ejecucion_actividades_spi" == $shortTName && ($type===false || ($type!==false && $type == 0)))
-		return true;
 	if ("rep_prg001_catalogopresupuestal" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("global_users" == $shortTName && ($type===false || ($type!==false && $type == 0)))
@@ -314,6 +310,18 @@ function checkTableName($shortTName, $type=false)
 	if ("global_users_contratistas" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
 	if ("contractor_master" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("dependencia_sj" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("funcionario_sj" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("contractor_master_sj" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("global_status" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("dependencia_det" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("dependencia_det_dir" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
 	return false;
 }
@@ -637,24 +645,6 @@ function GetTablesList($pdfMode = false)
 	}
 	$tableAvailable = true;
 	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("global_ejecucion_desagregada");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="global_ejecucion_desagregada";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("global_ejecucion_actividades_spi");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="global_ejecucion_actividades_spi";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
 		$strPerm = GetUserPermissions("rep_prg001_catalogopresupuestal");
 		$tableAvailable = ( strpos($strPerm, "P") !== false
 			|| $pdfMode && strpos($strPerm, "S") !== false );
@@ -869,6 +859,60 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="contractor_master";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("dependencia_SJ");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="dependencia_SJ";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("funcionario_SJ");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="funcionario_SJ";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contractor_master_SJ");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contractor_master_SJ";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("global_status");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="global_status";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("dependencia_det");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="dependencia_det";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("dependencia_det_DIR");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="dependencia_det_DIR";
+	}
 	return $arr;
 }
 
@@ -908,8 +952,6 @@ function GetTablesListWithoutSecurity()
 	$arr[]="vigencia";
 	$arr[]="divipola";
 	$arr[]="global_ejecucion";
-	$arr[]="global_ejecucion_desagregada";
-	$arr[]="global_ejecucion_actividades_spi";
 	$arr[]="rep_prg001_catalogopresupuestal";
 	$arr[]="global_users";
 	$arr[]="global_rol_almacen";
@@ -934,6 +976,12 @@ function GetTablesListWithoutSecurity()
 	$arr[]="cargo";
 	$arr[]="global_users_contratistas";
 	$arr[]="contractor_master";
+	$arr[]="dependencia_SJ";
+	$arr[]="funcionario_SJ";
+	$arr[]="contractor_master_SJ";
+	$arr[]="global_status";
+	$arr[]="dependencia_det";
+	$arr[]="dependencia_det_DIR";
 	return $arr;
 }
 
@@ -1879,18 +1927,6 @@ function GetUserPermissionsStatic( $table )
 		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
-	if( $table=="global_ejecucion_desagregada" )
-	{
-//	default permissions
-		// grant all by default
-		return "ADESPI".$extraPerm;
-	}
-	if( $table=="global_ejecucion_actividades_spi" )
-	{
-//	default permissions
-		// grant all by default
-		return "ADESPI".$extraPerm;
-	}
 	if( $table=="rep_prg001_catalogopresupuestal" )
 	{
 //	default permissions
@@ -2035,6 +2071,42 @@ function GetUserPermissionsStatic( $table )
 		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
+	if( $table=="dependencia_SJ" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="funcionario_SJ" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="contractor_master_SJ" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="global_status" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="dependencia_det" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="dependencia_det_DIR" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
 	// grant nothing by default
 	return "";
 }
@@ -2153,6 +2225,9 @@ function SetAuthSessionData($pUsername, &$data, $password, &$pageObject = null, 
 	}
 
 
+		$_SESSION["OwnerID"] = $data["usr_directivo"];
+	$_SESSION["_dependencia_SJ_OwnerID"] = $data["usr_directivo"];
+		$_SESSION["_dependencia_det_DIR_OwnerID"] = $data["usr_dep_sup"];
 
 	$_SESSION["UserData"] = $data;
 
@@ -2214,6 +2289,18 @@ function CheckSecurity($strValue, $strAction, $table = "")
 	$strPerm = GetUserPermissions();
 	if( strpos($strPerm, "M") === false )
 	{
+		if($table=="dependencia_SJ")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="dependencia_det_DIR")
+		{
+
+				if(( $strAction=="Edit" || $strAction=="Delete") && !($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
 	}
 	if( Security::permissionsAvailable() )
 	{
@@ -2284,6 +2371,15 @@ function SecuritySQL($strAction, $table, $strPerm="")
 
 	if(strpos($strPerm,"M")===false)
 	{
+		if($table=="dependencia_SJ")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="dependencia_det_DIR")
+		{
+				if($strAction == "Edit" || $strAction == "Delete")
+				$ret=GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
 	}
 
 	if($strAction=="Edit" && !(strpos($strPerm, "E")===false) ||

@@ -171,7 +171,7 @@ array( 'cell' => 'c2' ) ),
 'remember_password' => array( 'type' => 'remember_password' ),
 'continue_login_button' => array( 'type' => 'continue_login_button' ),
 'image' => array( 'type' => 'image',
-'imagePath' => 'logo_institucional.png' ) ),
+'imagePath' => 'xlogo.png' ) ),
 'dbProps' => array(  ),
 'version' => 4 );
 		?>

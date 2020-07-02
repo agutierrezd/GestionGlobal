@@ -298,7 +298,7 @@ class ConnectionManager
 		$data["connInfo"][4] = "edl";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=edl;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=edl;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -331,7 +331,7 @@ class ConnectionManager
 		$data["connInfo"][4] = "dbct";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=dbct;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=dbct;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -364,7 +364,7 @@ class ConnectionManager
 		$data["connInfo"][4] = "dbusers";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=dbusers;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=dbusers;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -397,7 +397,7 @@ class ConnectionManager
 		$data["connInfo"][4] = "sep2";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=sep2;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=sep2;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -445,8 +445,6 @@ class ConnectionManager
 		$connectionsIds["vigencia"] = "dbct_at_localhost";
 		$connectionsIds["divipola"] = "dbusers_at_localhost";
 		$connectionsIds["global_ejecucion"] = "sep2_at_localhost";
-		$connectionsIds["global_ejecucion_desagregada"] = "sep2_at_localhost";
-		$connectionsIds["global_ejecucion_actividades_spi"] = "sep2_at_localhost";
 		$connectionsIds["rep_prg001_catalogopresupuestal"] = "sep2_at_localhost";
 		$connectionsIds["global_users"] = "dbusers_at_localhost";
 		$connectionsIds["global_rol_almacen"] = "dbusers_at_localhost";
@@ -470,6 +468,12 @@ class ConnectionManager
 		$connectionsIds["cargo"] = "edl_at_localhost";
 		$connectionsIds["global_users_contratistas"] = "dbusers_at_localhost";
 		$connectionsIds["contractor_master"] = "dbct_at_localhost";
+		$connectionsIds["dependencia_SJ"] = "edl_at_localhost";
+		$connectionsIds["funcionario_SJ"] = "edl_at_localhost";
+		$connectionsIds["contractor_master_SJ"] = "dbct_at_localhost";
+		$connectionsIds["global_status"] = "dbusers_at_localhost";
+		$connectionsIds["dependencia_det"] = "edl_at_localhost";
+		$connectionsIds["dependencia_det_DIR"] = "edl_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

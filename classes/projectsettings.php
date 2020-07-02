@@ -3159,10 +3159,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "divipola" ] = "divipola";
 	$projectEntities[ "global_ejecucion" ] = array( "url" => "global_ejecucion", "type" => 0 );
 	$projectEntitiesReverse[ "global_ejecucion" ] = "global_ejecucion";
-	$projectEntities[ "global_ejecucion_desagregada" ] = array( "url" => "global_ejecucion_desagregada", "type" => 0 );
-	$projectEntitiesReverse[ "global_ejecucion_desagregada" ] = "global_ejecucion_desagregada";
-	$projectEntities[ "global_ejecucion_actividades_spi" ] = array( "url" => "global_ejecucion_actividades_spi", "type" => 0 );
-	$projectEntitiesReverse[ "global_ejecucion_actividades_spi" ] = "global_ejecucion_actividades_spi";
 	$projectEntities[ "rep_prg001_catalogopresupuestal" ] = array( "url" => "rep_prg001_catalogopresupuestal", "type" => 0 );
 	$projectEntitiesReverse[ "rep_prg001_catalogopresupuestal" ] = "rep_prg001_catalogopresupuestal";
 	$projectEntities[ "global_users" ] = array( "url" => "global_users", "type" => 0 );
@@ -3211,6 +3207,18 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "global_users_contratistas" ] = "global_users_contratistas";
 	$projectEntities[ "contractor_master" ] = array( "url" => "contractor_master", "type" => 0 );
 	$projectEntitiesReverse[ "contractor_master" ] = "contractor_master";
+	$projectEntities[ "dependencia_SJ" ] = array( "url" => "dependencia_sj", "type" => 1 );
+	$projectEntitiesReverse[ "dependencia_sj" ] = "dependencia_SJ";
+	$projectEntities[ "funcionario_SJ" ] = array( "url" => "funcionario_sj", "type" => 1 );
+	$projectEntitiesReverse[ "funcionario_sj" ] = "funcionario_SJ";
+	$projectEntities[ "contractor_master_SJ" ] = array( "url" => "contractor_master_sj", "type" => 1 );
+	$projectEntitiesReverse[ "contractor_master_sj" ] = "contractor_master_SJ";
+	$projectEntities[ "global_status" ] = array( "url" => "global_status", "type" => 0 );
+	$projectEntitiesReverse[ "global_status" ] = "global_status";
+	$projectEntities[ "dependencia_det" ] = array( "url" => "dependencia_det", "type" => 0 );
+	$projectEntitiesReverse[ "dependencia_det" ] = "dependencia_det";
+	$projectEntities[ "dependencia_det_DIR" ] = array( "url" => "dependencia_det_dir", "type" => 1 );
+	$projectEntitiesReverse[ "dependencia_det_dir" ] = "dependencia_det_DIR";
 }
 
 function findTable( $table ) {

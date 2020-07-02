@@ -550,10 +550,6 @@ class Chart
 			return true;
 		if("global_ejecucion" == $this->chrt_array['tables'][0])
 			return true;
-		if("global_ejecucion_desagregada" == $this->chrt_array['tables'][0])
-			return true;
-		if("global_ejecucion_actividades_spi" == $this->chrt_array['tables'][0])
-			return true;
 		if("rep_prg001_catalogopresupuestal" == $this->chrt_array['tables'][0])
 			return true;
 		if("global_users" == $this->chrt_array['tables'][0])
@@ -601,6 +597,18 @@ class Chart
 		if("global_users" == $this->chrt_array['tables'][0])
 			return true;
 		if("contractor_master" == $this->chrt_array['tables'][0])
+			return true;
+		if("dependencia" == $this->chrt_array['tables'][0])
+			return true;
+		if("funcionario" == $this->chrt_array['tables'][0])
+			return true;
+		if("contractor_master" == $this->chrt_array['tables'][0])
+			return true;
+		if("global_status" == $this->chrt_array['tables'][0])
+			return true;
+		if("dependencia_det" == $this->chrt_array['tables'][0])
+			return true;
+		if("dependencia_det" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

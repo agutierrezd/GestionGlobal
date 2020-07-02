@@ -271,6 +271,12 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsglobal_users["Spanish"]["phone1"] = "Celular 2";
 	$fieldToolTipsglobal_users["Spanish"]["phone1"] = "";
 	$placeHoldersglobal_users["Spanish"]["phone1"] = "";
+	$fieldLabelsglobal_users["Spanish"]["usr_directivo"] = "Usr Directivo";
+	$fieldToolTipsglobal_users["Spanish"]["usr_directivo"] = "";
+	$placeHoldersglobal_users["Spanish"]["usr_directivo"] = "";
+	$fieldLabelsglobal_users["Spanish"]["usr_dep_sup"] = "Usr Dep Sup";
+	$fieldToolTipsglobal_users["Spanish"]["usr_dep_sup"] = "";
+	$placeHoldersglobal_users["Spanish"]["usr_dep_sup"] = "";
 	if (count($fieldToolTipsglobal_users["Spanish"]))
 		$tdataglobal_users[".isUseToolTips"] = true;
 }
@@ -474,6 +480,8 @@ $tdataglobal_users[".googleLikeFields"][] = "habilita_almacen";
 $tdataglobal_users[".googleLikeFields"][] = "estado_vinculacion_mincit";
 $tdataglobal_users[".googleLikeFields"][] = "phone";
 $tdataglobal_users[".googleLikeFields"][] = "phone1";
+$tdataglobal_users[".googleLikeFields"][] = "usr_directivo";
+$tdataglobal_users[".googleLikeFields"][] = "usr_dep_sup";
 
 
 
@@ -508,7 +516,7 @@ $tdataglobal_users[".strOrderBy"] = $tstrOrderBy;
 
 $tdataglobal_users[".orderindexes"] = array();
 
-$tdataglobal_users[".sqlHead"] = "SELECT idusrglobal,  id_fk,  Username,  Password,  usr_email,  usr_name,  usr_lname,  usr_nombresfull,  usr_personalid,  usr_inicial,  usr_sessini,  usr_image,  usr_status_nomina,  usr_status,  usr_rdnkey,  usr_type_vinc,  usr_type_vinculacion,  usr_status_sol,  usr_dependencia,  user_dep,  usr_entidad,  usr_not,  usr_not_msj,  usr_jefe,  usr_minequipo_lider,  usr_minequipo_grupo,  global_rol_me,  global_rol_gh,  global_rol_almacen,  global_rol_ci,  global_rol_contratos,  global_rol_hojar,  global_rol_inmuebles,  global_rol_siis,  global_rol_cpanel,  global_rol_dashboard,  global_rol_zf,  global_rol_sipi,  global_rol_cej,  global_rol_jc3,  global_rol_th,  global_rol_sid,  global_rol,  global_rol_cont,  globla_rol_ct,  global_rol_procjur,  global_rol_comacc,  global_rol_gestion,  global_rol_ciudadano,  global_rol_ciudadano_dep,  sys_user,  sys_date,  sys_time,  sys_ntries_usr,  sys_registrationdate_usr,  sys_expiration_usr,  sys_disabledate_usr,  sys_upd_fecha,  sys_upd_user,  sys_upd_time,  sys_update_info,  sys_update_family_info,  usr_update_almacen,  sys_anio,  ctrl,  usr_dep,  usr_cargo,  usr_regpago,  usr_extension,  usr_piso,  usr_datebirth,  ctrl_pedidoalmacen,  ctrl_contacto,  usr_emergencia,  upd_date,  active,  groupid,  habilita_almacen,  estado_vinculacion_mincit,  phone,  phone1";
+$tdataglobal_users[".sqlHead"] = "SELECT idusrglobal,  id_fk,  Username,  Password,  usr_email,  usr_name,  usr_lname,  usr_nombresfull,  usr_personalid,  usr_inicial,  usr_sessini,  usr_image,  usr_status_nomina,  usr_status,  usr_rdnkey,  usr_type_vinc,  usr_type_vinculacion,  usr_status_sol,  usr_dependencia,  user_dep,  usr_entidad,  usr_not,  usr_not_msj,  usr_jefe,  usr_minequipo_lider,  usr_minequipo_grupo,  global_rol_me,  global_rol_gh,  global_rol_almacen,  global_rol_ci,  global_rol_contratos,  global_rol_hojar,  global_rol_inmuebles,  global_rol_siis,  global_rol_cpanel,  global_rol_dashboard,  global_rol_zf,  global_rol_sipi,  global_rol_cej,  global_rol_jc3,  global_rol_th,  global_rol_sid,  global_rol,  global_rol_cont,  globla_rol_ct,  global_rol_procjur,  global_rol_comacc,  global_rol_gestion,  global_rol_ciudadano,  global_rol_ciudadano_dep,  sys_user,  sys_date,  sys_time,  sys_ntries_usr,  sys_registrationdate_usr,  sys_expiration_usr,  sys_disabledate_usr,  sys_upd_fecha,  sys_upd_user,  sys_upd_time,  sys_update_info,  sys_update_family_info,  usr_update_almacen,  sys_anio,  ctrl,  usr_dep,  usr_cargo,  usr_regpago,  usr_extension,  usr_piso,  usr_datebirth,  ctrl_pedidoalmacen,  ctrl_contacto,  usr_emergencia,  upd_date,  active,  groupid,  habilita_almacen,  estado_vinculacion_mincit,  phone,  phone1,  usr_directivo,  usr_dep_sup";
 $tdataglobal_users[".sqlFrom"] = "FROM global_users";
 $tdataglobal_users[".sqlWhereExpr"] = "";
 $tdataglobal_users[".sqlTail"] = "";
@@ -11563,6 +11571,276 @@ $tdataglobal_users[".hideMobileList"] = array();
 
 	$tdataglobal_users["phone1"] = $fdata;
 		$tdataglobal_users[".searchableFields"][] = "phone1";
+//	usr_directivo
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 82;
+	$fdata["strName"] = "usr_directivo";
+	$fdata["GoodName"] = "usr_directivo";
+	$fdata["ownerTable"] = "global_users";
+	$fdata["Label"] = GetFieldLabel("global_users","usr_directivo");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "usr_directivo";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "usr_directivo";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataglobal_users["usr_directivo"] = $fdata;
+		$tdataglobal_users[".searchableFields"][] = "usr_directivo";
+//	usr_dep_sup
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 83;
+	$fdata["strName"] = "usr_dep_sup";
+	$fdata["GoodName"] = "usr_dep_sup";
+	$fdata["ownerTable"] = "global_users";
+	$fdata["Label"] = GetFieldLabel("global_users","usr_dep_sup");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "usr_dep_sup";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "usr_dep_sup";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataglobal_users["usr_dep_sup"] = $fdata;
+		$tdataglobal_users[".searchableFields"][] = "usr_dep_sup";
 
 
 $tables_data["global_users"]=&$tdataglobal_users;
@@ -11616,7 +11894,7 @@ function createSqlQuery_global_users()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "idusrglobal,  id_fk,  Username,  Password,  usr_email,  usr_name,  usr_lname,  usr_nombresfull,  usr_personalid,  usr_inicial,  usr_sessini,  usr_image,  usr_status_nomina,  usr_status,  usr_rdnkey,  usr_type_vinc,  usr_type_vinculacion,  usr_status_sol,  usr_dependencia,  user_dep,  usr_entidad,  usr_not,  usr_not_msj,  usr_jefe,  usr_minequipo_lider,  usr_minequipo_grupo,  global_rol_me,  global_rol_gh,  global_rol_almacen,  global_rol_ci,  global_rol_contratos,  global_rol_hojar,  global_rol_inmuebles,  global_rol_siis,  global_rol_cpanel,  global_rol_dashboard,  global_rol_zf,  global_rol_sipi,  global_rol_cej,  global_rol_jc3,  global_rol_th,  global_rol_sid,  global_rol,  global_rol_cont,  globla_rol_ct,  global_rol_procjur,  global_rol_comacc,  global_rol_gestion,  global_rol_ciudadano,  global_rol_ciudadano_dep,  sys_user,  sys_date,  sys_time,  sys_ntries_usr,  sys_registrationdate_usr,  sys_expiration_usr,  sys_disabledate_usr,  sys_upd_fecha,  sys_upd_user,  sys_upd_time,  sys_update_info,  sys_update_family_info,  usr_update_almacen,  sys_anio,  ctrl,  usr_dep,  usr_cargo,  usr_regpago,  usr_extension,  usr_piso,  usr_datebirth,  ctrl_pedidoalmacen,  ctrl_contacto,  usr_emergencia,  upd_date,  active,  groupid,  habilita_almacen,  estado_vinculacion_mincit,  phone,  phone1";
+$proto0["m_strFieldList"] = "idusrglobal,  id_fk,  Username,  Password,  usr_email,  usr_name,  usr_lname,  usr_nombresfull,  usr_personalid,  usr_inicial,  usr_sessini,  usr_image,  usr_status_nomina,  usr_status,  usr_rdnkey,  usr_type_vinc,  usr_type_vinculacion,  usr_status_sol,  usr_dependencia,  user_dep,  usr_entidad,  usr_not,  usr_not_msj,  usr_jefe,  usr_minequipo_lider,  usr_minequipo_grupo,  global_rol_me,  global_rol_gh,  global_rol_almacen,  global_rol_ci,  global_rol_contratos,  global_rol_hojar,  global_rol_inmuebles,  global_rol_siis,  global_rol_cpanel,  global_rol_dashboard,  global_rol_zf,  global_rol_sipi,  global_rol_cej,  global_rol_jc3,  global_rol_th,  global_rol_sid,  global_rol,  global_rol_cont,  globla_rol_ct,  global_rol_procjur,  global_rol_comacc,  global_rol_gestion,  global_rol_ciudadano,  global_rol_ciudadano_dep,  sys_user,  sys_date,  sys_time,  sys_ntries_usr,  sys_registrationdate_usr,  sys_expiration_usr,  sys_disabledate_usr,  sys_upd_fecha,  sys_upd_user,  sys_upd_time,  sys_update_info,  sys_update_family_info,  usr_update_almacen,  sys_anio,  ctrl,  usr_dep,  usr_cargo,  usr_regpago,  usr_extension,  usr_piso,  usr_datebirth,  ctrl_pedidoalmacen,  ctrl_contacto,  usr_emergencia,  upd_date,  active,  groupid,  habilita_almacen,  estado_vinculacion_mincit,  phone,  phone1,  usr_directivo,  usr_dep_sup";
 $proto0["m_strFrom"] = "FROM global_users";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -12790,117 +13068,147 @@ $proto166["m_alias"] = "";
 $obj = new SQLFieldListItem($proto166);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto168=array();
-$proto168["m_link"] = "SQLL_MAIN";
-			$proto169=array();
-$proto169["m_strName"] = "global_users";
-$proto169["m_srcTableName"] = "global_users";
-$proto169["m_columns"] = array();
-$proto169["m_columns"][] = "idusrglobal";
-$proto169["m_columns"][] = "id_fk";
-$proto169["m_columns"][] = "Username";
-$proto169["m_columns"][] = "Password";
-$proto169["m_columns"][] = "usr_email";
-$proto169["m_columns"][] = "usr_name";
-$proto169["m_columns"][] = "usr_lname";
-$proto169["m_columns"][] = "usr_nombresfull";
-$proto169["m_columns"][] = "usr_personalid";
-$proto169["m_columns"][] = "usr_inicial";
-$proto169["m_columns"][] = "usr_sessini";
-$proto169["m_columns"][] = "usr_image";
-$proto169["m_columns"][] = "usr_status_nomina";
-$proto169["m_columns"][] = "usr_status";
-$proto169["m_columns"][] = "usr_rdnkey";
-$proto169["m_columns"][] = "usr_type_vinc";
-$proto169["m_columns"][] = "usr_type_vinculacion";
-$proto169["m_columns"][] = "usr_status_sol";
-$proto169["m_columns"][] = "usr_dependencia";
-$proto169["m_columns"][] = "user_dep";
-$proto169["m_columns"][] = "usr_entidad";
-$proto169["m_columns"][] = "usr_not";
-$proto169["m_columns"][] = "usr_not_msj";
-$proto169["m_columns"][] = "usr_jefe";
-$proto169["m_columns"][] = "usr_minequipo_lider";
-$proto169["m_columns"][] = "usr_minequipo_grupo";
-$proto169["m_columns"][] = "global_rol_me";
-$proto169["m_columns"][] = "global_rol_gh";
-$proto169["m_columns"][] = "global_rol_almacen";
-$proto169["m_columns"][] = "global_rol_ci";
-$proto169["m_columns"][] = "global_rol_contratos";
-$proto169["m_columns"][] = "global_rol_hojar";
-$proto169["m_columns"][] = "global_rol_inmuebles";
-$proto169["m_columns"][] = "global_rol_siis";
-$proto169["m_columns"][] = "global_rol_cpanel";
-$proto169["m_columns"][] = "global_rol_dashboard";
-$proto169["m_columns"][] = "global_rol_zf";
-$proto169["m_columns"][] = "global_rol_sipi";
-$proto169["m_columns"][] = "global_rol_cej";
-$proto169["m_columns"][] = "global_rol_jc3";
-$proto169["m_columns"][] = "global_rol_th";
-$proto169["m_columns"][] = "global_rol_sid";
-$proto169["m_columns"][] = "global_rol";
-$proto169["m_columns"][] = "global_rol_cont";
-$proto169["m_columns"][] = "globla_rol_ct";
-$proto169["m_columns"][] = "global_rol_procjur";
-$proto169["m_columns"][] = "global_rol_comacc";
-$proto169["m_columns"][] = "global_rol_gestion";
-$proto169["m_columns"][] = "global_rol_ciudadano";
-$proto169["m_columns"][] = "global_rol_ciudadano_dep";
-$proto169["m_columns"][] = "sys_user";
-$proto169["m_columns"][] = "sys_date";
-$proto169["m_columns"][] = "sys_time";
-$proto169["m_columns"][] = "sys_ntries_usr";
-$proto169["m_columns"][] = "sys_registrationdate_usr";
-$proto169["m_columns"][] = "sys_expiration_usr";
-$proto169["m_columns"][] = "sys_disabledate_usr";
-$proto169["m_columns"][] = "sys_upd_fecha";
-$proto169["m_columns"][] = "sys_upd_user";
-$proto169["m_columns"][] = "sys_upd_time";
-$proto169["m_columns"][] = "sys_update_info";
-$proto169["m_columns"][] = "sys_update_family_info";
-$proto169["m_columns"][] = "usr_update_almacen";
-$proto169["m_columns"][] = "sys_anio";
-$proto169["m_columns"][] = "ctrl";
-$proto169["m_columns"][] = "usr_dep";
-$proto169["m_columns"][] = "usr_cargo";
-$proto169["m_columns"][] = "usr_regpago";
-$proto169["m_columns"][] = "usr_extension";
-$proto169["m_columns"][] = "usr_piso";
-$proto169["m_columns"][] = "usr_datebirth";
-$proto169["m_columns"][] = "ctrl_pedidoalmacen";
-$proto169["m_columns"][] = "ctrl_contacto";
-$proto169["m_columns"][] = "usr_emergencia";
-$proto169["m_columns"][] = "active";
-$proto169["m_columns"][] = "groupid";
-$proto169["m_columns"][] = "habilita_almacen";
-$proto169["m_columns"][] = "estado_vinculacion_mincit";
-$proto169["m_columns"][] = "upd_date";
-$proto169["m_columns"][] = "phone";
-$proto169["m_columns"][] = "phone1";
-$obj = new SQLTable($proto169);
+						$proto168=array();
+			$obj = new SQLField(array(
+	"m_strName" => "usr_directivo",
+	"m_strTable" => "global_users",
+	"m_srcTableName" => "global_users"
+));
 
-$proto168["m_table"] = $obj;
-$proto168["m_sql"] = "global_users";
-$proto168["m_alias"] = "";
+$proto168["m_sql"] = "usr_directivo";
 $proto168["m_srcTableName"] = "global_users";
-$proto170=array();
-$proto170["m_sql"] = "";
-$proto170["m_uniontype"] = "SQLL_UNKNOWN";
+$proto168["m_expr"]=$obj;
+$proto168["m_alias"] = "";
+$obj = new SQLFieldListItem($proto168);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto170=array();
+			$obj = new SQLField(array(
+	"m_strName" => "usr_dep_sup",
+	"m_strTable" => "global_users",
+	"m_srcTableName" => "global_users"
+));
+
+$proto170["m_sql"] = "usr_dep_sup";
+$proto170["m_srcTableName"] = "global_users";
+$proto170["m_expr"]=$obj;
+$proto170["m_alias"] = "";
+$obj = new SQLFieldListItem($proto170);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto172=array();
+$proto172["m_link"] = "SQLL_MAIN";
+			$proto173=array();
+$proto173["m_strName"] = "global_users";
+$proto173["m_srcTableName"] = "global_users";
+$proto173["m_columns"] = array();
+$proto173["m_columns"][] = "idusrglobal";
+$proto173["m_columns"][] = "id_fk";
+$proto173["m_columns"][] = "Username";
+$proto173["m_columns"][] = "Password";
+$proto173["m_columns"][] = "usr_email";
+$proto173["m_columns"][] = "usr_name";
+$proto173["m_columns"][] = "usr_lname";
+$proto173["m_columns"][] = "usr_nombresfull";
+$proto173["m_columns"][] = "usr_personalid";
+$proto173["m_columns"][] = "usr_inicial";
+$proto173["m_columns"][] = "usr_sessini";
+$proto173["m_columns"][] = "usr_image";
+$proto173["m_columns"][] = "usr_status_nomina";
+$proto173["m_columns"][] = "usr_status";
+$proto173["m_columns"][] = "usr_rdnkey";
+$proto173["m_columns"][] = "usr_type_vinc";
+$proto173["m_columns"][] = "usr_type_vinculacion";
+$proto173["m_columns"][] = "usr_status_sol";
+$proto173["m_columns"][] = "usr_dependencia";
+$proto173["m_columns"][] = "user_dep";
+$proto173["m_columns"][] = "usr_entidad";
+$proto173["m_columns"][] = "usr_not";
+$proto173["m_columns"][] = "usr_not_msj";
+$proto173["m_columns"][] = "usr_jefe";
+$proto173["m_columns"][] = "usr_minequipo_lider";
+$proto173["m_columns"][] = "usr_minequipo_grupo";
+$proto173["m_columns"][] = "global_rol_me";
+$proto173["m_columns"][] = "global_rol_gh";
+$proto173["m_columns"][] = "global_rol_almacen";
+$proto173["m_columns"][] = "global_rol_ci";
+$proto173["m_columns"][] = "global_rol_contratos";
+$proto173["m_columns"][] = "global_rol_hojar";
+$proto173["m_columns"][] = "global_rol_inmuebles";
+$proto173["m_columns"][] = "global_rol_siis";
+$proto173["m_columns"][] = "global_rol_cpanel";
+$proto173["m_columns"][] = "global_rol_dashboard";
+$proto173["m_columns"][] = "global_rol_zf";
+$proto173["m_columns"][] = "global_rol_sipi";
+$proto173["m_columns"][] = "global_rol_cej";
+$proto173["m_columns"][] = "global_rol_jc3";
+$proto173["m_columns"][] = "global_rol_th";
+$proto173["m_columns"][] = "global_rol_sid";
+$proto173["m_columns"][] = "global_rol";
+$proto173["m_columns"][] = "global_rol_cont";
+$proto173["m_columns"][] = "globla_rol_ct";
+$proto173["m_columns"][] = "global_rol_procjur";
+$proto173["m_columns"][] = "global_rol_comacc";
+$proto173["m_columns"][] = "global_rol_gestion";
+$proto173["m_columns"][] = "global_rol_ciudadano";
+$proto173["m_columns"][] = "global_rol_ciudadano_dep";
+$proto173["m_columns"][] = "sys_user";
+$proto173["m_columns"][] = "sys_date";
+$proto173["m_columns"][] = "sys_time";
+$proto173["m_columns"][] = "sys_ntries_usr";
+$proto173["m_columns"][] = "sys_registrationdate_usr";
+$proto173["m_columns"][] = "sys_expiration_usr";
+$proto173["m_columns"][] = "sys_disabledate_usr";
+$proto173["m_columns"][] = "sys_upd_fecha";
+$proto173["m_columns"][] = "sys_upd_user";
+$proto173["m_columns"][] = "sys_upd_time";
+$proto173["m_columns"][] = "sys_update_info";
+$proto173["m_columns"][] = "sys_update_family_info";
+$proto173["m_columns"][] = "usr_update_almacen";
+$proto173["m_columns"][] = "sys_anio";
+$proto173["m_columns"][] = "ctrl";
+$proto173["m_columns"][] = "usr_directivo";
+$proto173["m_columns"][] = "usr_dep";
+$proto173["m_columns"][] = "usr_dep_sup";
+$proto173["m_columns"][] = "usr_cargo";
+$proto173["m_columns"][] = "usr_regpago";
+$proto173["m_columns"][] = "usr_extension";
+$proto173["m_columns"][] = "usr_piso";
+$proto173["m_columns"][] = "usr_datebirth";
+$proto173["m_columns"][] = "ctrl_pedidoalmacen";
+$proto173["m_columns"][] = "ctrl_contacto";
+$proto173["m_columns"][] = "usr_emergencia";
+$proto173["m_columns"][] = "active";
+$proto173["m_columns"][] = "groupid";
+$proto173["m_columns"][] = "habilita_almacen";
+$proto173["m_columns"][] = "estado_vinculacion_mincit";
+$proto173["m_columns"][] = "upd_date";
+$proto173["m_columns"][] = "phone";
+$proto173["m_columns"][] = "phone1";
+$obj = new SQLTable($proto173);
+
+$proto172["m_table"] = $obj;
+$proto172["m_sql"] = "global_users";
+$proto172["m_alias"] = "";
+$proto172["m_srcTableName"] = "global_users";
+$proto174=array();
+$proto174["m_sql"] = "";
+$proto174["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto170["m_column"]=$obj;
-$proto170["m_contained"] = array();
-$proto170["m_strCase"] = "";
-$proto170["m_havingmode"] = false;
-$proto170["m_inBrackets"] = false;
-$proto170["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto170);
+$proto174["m_column"]=$obj;
+$proto174["m_contained"] = array();
+$proto174["m_strCase"] = "";
+$proto174["m_havingmode"] = false;
+$proto174["m_inBrackets"] = false;
+$proto174["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto174);
 
-$proto168["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto168);
+$proto172["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto172);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -12916,7 +13224,7 @@ $queryData_global_users = createSqlQuery_global_users();
 	
 								;
 
-																																																																																	
+																																																																																			
 
 $tdataglobal_users[".sqlquery"] = $queryData_global_users;
 

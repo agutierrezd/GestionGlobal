@@ -22,6 +22,8 @@ class class_GlobalEvents extends eventsBase
 	function __construct()
 	{
 	// fill list of events
+		$this->events["AfterSuccessfulLogin"]=true;
+
 
 //	onscreen events
 
@@ -30,6 +32,41 @@ class class_GlobalEvents extends eventsBase
 		}
 
 //	handlers
+
+		
+		
+		
+		
+		
+		
+				// After successful login
+function AfterSuccessfulLogin($username, $password, &$data, &$pageObject)
+{
+
+		$_SESSION["jefe"] = $data["usr_directivo"];
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function AfterSuccessfulLogin
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 //	onscreen events
 

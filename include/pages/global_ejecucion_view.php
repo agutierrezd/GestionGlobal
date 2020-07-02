@@ -1,9 +1,5 @@
 <?php
 			$optionsArray = array( 'pdf' => array( 'pdfView' => false ),
-'details' => array( 'global_ejecucion_desagregada' => array( 'displayPreview' => 2,
-'previewPageId' => '' ),
-'global_ejecucion_actividades_spi' => array( 'displayPreview' => 2,
-'previewPageId' => '' ) ),
 'fields' => array( 'gridFields' => array( 'CODIGO_BPIN',
 'FICHA_BPIN',
 'RUBRO',

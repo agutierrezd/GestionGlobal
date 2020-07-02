@@ -45,8 +45,6 @@ $nonAdminTablesArr[] = "tipo_liquidacion";
 $nonAdminTablesArr[] = "vigencia";
 $nonAdminTablesArr[] = "divipola";
 $nonAdminTablesArr[] = "global_ejecucion";
-$nonAdminTablesArr[] = "global_ejecucion_desagregada";
-$nonAdminTablesArr[] = "global_ejecucion_actividades_spi";
 $nonAdminTablesArr[] = "rep_prg001_catalogopresupuestal";
 $nonAdminTablesArr[] = "global_users";
 $nonAdminTablesArr[] = "global_rol_almacen";
@@ -68,6 +66,12 @@ $nonAdminTablesArr[] = "tparam_tipo_ct_arl";
 $nonAdminTablesArr[] = "cargo";
 $nonAdminTablesArr[] = "global_users_contratistas";
 $nonAdminTablesArr[] = "contractor_master";
+$nonAdminTablesArr[] = "dependencia_SJ";
+$nonAdminTablesArr[] = "funcionario_SJ";
+$nonAdminTablesArr[] = "contractor_master_SJ";
+$nonAdminTablesArr[] = "global_status";
+$nonAdminTablesArr[] = "dependencia_det";
+$nonAdminTablesArr[] = "dependencia_det_DIR";
 
 $ug_connection = $cman->getForUserGroups();
 

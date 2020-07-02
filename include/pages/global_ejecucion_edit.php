@@ -1,9 +1,5 @@
 <?php
-			$optionsArray = array( 'details' => array( 'global_ejecucion_desagregada' => array( 'displayPreview' => 2,
-'previewPageId' => '' ),
-'global_ejecucion_actividades_spi' => array( 'displayPreview' => 2,
-'previewPageId' => '' ) ),
-'captcha' => array( 'captcha' => false ),
+			$optionsArray = array( 'captcha' => array( 'captcha' => false ),
 'fields' => array( 'gridFields' => array( 'VIGENCIA',
 'CODIGO_BPIN',
 'FICHA_BPIN',

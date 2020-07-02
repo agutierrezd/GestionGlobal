@@ -9,11 +9,11 @@ $tdatacontractor_master[".OwnerID"] = "";
 $tdatacontractor_master[".OriginalTable"] = "contractor_master";
 
 
-$tdatacontractor_master[".pagesByType"] = my_json_decode( "{\"list\":[\"list\"]}" );
+$tdatacontractor_master[".pagesByType"] = my_json_decode( "{\"list\":[\"list\"],\"search\":[\"search\"]}" );
 $tdatacontractor_master[".originalPagesByType"] = $tdatacontractor_master[".pagesByType"];
-$tdatacontractor_master[".pages"] = types2pages( my_json_decode( "{\"list\":[\"list\"]}" ) );
+$tdatacontractor_master[".pages"] = types2pages( my_json_decode( "{\"list\":[\"list\"],\"search\":[\"search\"]}" ) );
 $tdatacontractor_master[".originalPages"] = $tdatacontractor_master[".pages"];
-$tdatacontractor_master[".defaultPages"] = my_json_decode( "{\"list\":\"list\"}" );
+$tdatacontractor_master[".defaultPages"] = my_json_decode( "{\"list\":\"list\",\"search\":\"search\"}" );
 $tdatacontractor_master[".originalDefaultPages"] = $tdatacontractor_master[".defaultPages"];
 
 //	field labels
@@ -34,7 +34,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscontractor_master["Spanish"]["contractor_type"] = "Contractor Type";
 	$fieldToolTipscontractor_master["Spanish"]["contractor_type"] = "";
 	$placeHolderscontractor_master["Spanish"]["contractor_type"] = "";
-	$fieldLabelscontractor_master["Spanish"]["contractor_doc_id"] = "Contractor Doc Id";
+	$fieldLabelscontractor_master["Spanish"]["contractor_doc_id"] = "Documento";
 	$fieldToolTipscontractor_master["Spanish"]["contractor_doc_id"] = "";
 	$placeHolderscontractor_master["Spanish"]["contractor_doc_id"] = "";
 	$fieldLabelscontractor_master["Spanish"]["contractor_doc_dv"] = "Contractor Doc Dv";
@@ -46,22 +46,22 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscontractor_master["Spanish"]["contractor_image"] = "Contractor Image";
 	$fieldToolTipscontractor_master["Spanish"]["contractor_image"] = "";
 	$placeHolderscontractor_master["Spanish"]["contractor_image"] = "";
-	$fieldLabelscontractor_master["Spanish"]["contractor_name"] = "Contractor Name";
+	$fieldLabelscontractor_master["Spanish"]["contractor_name"] = "Nombres";
 	$fieldToolTipscontractor_master["Spanish"]["contractor_name"] = "";
 	$placeHolderscontractor_master["Spanish"]["contractor_name"] = "";
-	$fieldLabelscontractor_master["Spanish"]["contractor_lname"] = "Contractor Lname";
+	$fieldLabelscontractor_master["Spanish"]["contractor_lname"] = "Apellidos";
 	$fieldToolTipscontractor_master["Spanish"]["contractor_lname"] = "";
 	$placeHolderscontractor_master["Spanish"]["contractor_lname"] = "";
-	$fieldLabelscontractor_master["Spanish"]["contractor_nombresfull"] = "Contractor Nombresfull";
+	$fieldLabelscontractor_master["Spanish"]["contractor_nombresfull"] = "Nombres completos";
 	$fieldToolTipscontractor_master["Spanish"]["contractor_nombresfull"] = "";
 	$placeHolderscontractor_master["Spanish"]["contractor_nombresfull"] = "";
 	$fieldLabelscontractor_master["Spanish"]["enlace_sigep"] = "Enlace Sigep";
 	$fieldToolTipscontractor_master["Spanish"]["enlace_sigep"] = "";
 	$placeHolderscontractor_master["Spanish"]["enlace_sigep"] = "";
-	$fieldLabelscontractor_master["Spanish"]["contractor_email"] = "Contractor Email";
+	$fieldLabelscontractor_master["Spanish"]["contractor_email"] = "Correo personal";
 	$fieldToolTipscontractor_master["Spanish"]["contractor_email"] = "";
 	$placeHolderscontractor_master["Spanish"]["contractor_email"] = "";
-	$fieldLabelscontractor_master["Spanish"]["contractor_email_mincit"] = "Contractor Email Mincit";
+	$fieldLabelscontractor_master["Spanish"]["contractor_email_mincit"] = "Correo institucional";
 	$fieldToolTipscontractor_master["Spanish"]["contractor_email_mincit"] = "";
 	$placeHolderscontractor_master["Spanish"]["contractor_email_mincit"] = "";
 	$fieldLabelscontractor_master["Spanish"]["contractor_address"] = "Contractor Address";
@@ -79,7 +79,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscontractor_master["Spanish"]["contractor_sup_jerarquico"] = "Contractor Sup Jerarquico";
 	$fieldToolTipscontractor_master["Spanish"]["contractor_sup_jerarquico"] = "";
 	$placeHolderscontractor_master["Spanish"]["contractor_sup_jerarquico"] = "";
-	$fieldLabelscontractor_master["Spanish"]["contractor_dependencia"] = "Contractor Dependencia";
+	$fieldLabelscontractor_master["Spanish"]["contractor_dependencia"] = "Dependencia";
 	$fieldToolTipscontractor_master["Spanish"]["contractor_dependencia"] = "";
 	$placeHolderscontractor_master["Spanish"]["contractor_dependencia"] = "";
 	$fieldLabelscontractor_master["Spanish"]["bank_name"] = "Bank Name";
@@ -2796,7 +2796,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -2806,9 +2806,38 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	
 	
 
-
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "dependencia";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
 
 	
+		
+	$edata["LinkField"] = "id";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "nombre";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -2821,18 +2850,16 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -2851,7 +2878,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);

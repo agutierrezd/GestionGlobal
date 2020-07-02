@@ -475,14 +475,6 @@ class AuditTrailTable
 		{
 			return true;
 		}
-		if($table=="global_ejecucion_desagregada")
-		{
-			return true;
-		}
-		if($table=="global_ejecucion_actividades_spi")
-		{
-			return true;
-		}
 		if($table=="rep_prg001_catalogopresupuestal")
 		{
 			return true;
@@ -576,6 +568,30 @@ class AuditTrailTable
 			return true;
 		}
 		if($table=="contractor_master")
+		{
+			return false;
+		}
+		if($table=="dependencia_SJ")
+		{
+			return true;
+		}
+		if($table=="funcionario_SJ")
+		{
+			return true;
+		}
+		if($table=="contractor_master_SJ")
+		{
+			return false;
+		}
+		if($table=="global_status")
+		{
+			return false;
+		}
+		if($table=="dependencia_det")
+		{
+			return false;
+		}
+		if($table=="dependencia_det_DIR")
 		{
 			return false;
 		}
@@ -1060,14 +1076,6 @@ class AuditTrailFile
 		{
 			return true;
 		}
-		if($table=="global_ejecucion_desagregada")
-		{
-			return true;
-		}
-		if($table=="global_ejecucion_actividades_spi")
-		{
-			return true;
-		}
 		if($table=="rep_prg001_catalogopresupuestal")
 		{
 			return true;
@@ -1161,6 +1169,30 @@ class AuditTrailFile
 			return true;
 		}
 		if($table=="contractor_master")
+		{
+			return false;
+		}
+		if($table=="dependencia_SJ")
+		{
+			return true;
+		}
+		if($table=="funcionario_SJ")
+		{
+			return true;
+		}
+		if($table=="contractor_master_SJ")
+		{
+			return false;
+		}
+		if($table=="global_status")
+		{
+			return false;
+		}
+		if($table=="dependencia_det")
+		{
+			return false;
+		}
+		if($table=="dependencia_det_DIR")
 		{
 			return false;
 		}

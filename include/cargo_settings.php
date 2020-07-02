@@ -186,6 +186,7 @@ $tdatacargo[".geocodingEnabled"] = false;
 
 
 
+$tdatacargo[".isDisplayLoading"] = true;
 
 
 

@@ -65,7 +65,9 @@ $dalTableglobal_users["sys_update_family_info"] = array("type"=>16,"varname"=>"s
 $dalTableglobal_users["usr_update_almacen"] = array("type"=>16,"varname"=>"usr_update_almacen", "name" => "usr_update_almacen");
 $dalTableglobal_users["sys_anio"] = array("type"=>2,"varname"=>"sys_anio", "name" => "sys_anio");
 $dalTableglobal_users["ctrl"] = array("type"=>200,"varname"=>"ctrl", "name" => "ctrl");
+$dalTableglobal_users["usr_directivo"] = array("type"=>3,"varname"=>"usr_directivo", "name" => "usr_directivo");
 $dalTableglobal_users["usr_dep"] = array("type"=>3,"varname"=>"usr_dep", "name" => "usr_dep");
+$dalTableglobal_users["usr_dep_sup"] = array("type"=>3,"varname"=>"usr_dep_sup", "name" => "usr_dep_sup");
 $dalTableglobal_users["usr_cargo"] = array("type"=>3,"varname"=>"usr_cargo", "name" => "usr_cargo");
 $dalTableglobal_users["usr_regpago"] = array("type"=>16,"varname"=>"usr_regpago", "name" => "usr_regpago");
 $dalTableglobal_users["usr_extension"] = array("type"=>200,"varname"=>"usr_extension", "name" => "usr_extension");

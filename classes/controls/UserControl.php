@@ -66,6 +66,37 @@ $this->settings["color"] = "#145394";
 $this->settings["linewidth"] = 2;;
 		return;
 	}	
+	$tName = $this->pageObject->tName;
+	$field = $this->field;
+	if( $this->pageObject->pSet ) {
+		if($this->pageObject->pageType == PAGE_SEARCH && $this->pageObject->pSet->getTableType() == PAGE_DASHBOARD)
+		{
+			$dashFields = $this->pageObject->pSet->getDashboardSearchFields();
+			$tName = $dashFields[$field][0]["table"];
+			$field = $dashFields[$field][0]["field"];
+		}
+	}
+				if($tName=="funcionario_SJ" && $field=="signpad")
+	{
+		// signature field height
+$this->settings["height"] = 100;
+// signature field width
+$this->settings["width"] = 300;
+// signature background color
+$this->settings["bgcolor"] = "#ffffff";
+// set it to true to make signature field required
+$this->settings["required"]=false;
+// folder to store signature files
+$this->settings["folder"]="signpad";
+// signature background image 
+// $this->settings["bgimage"] = "http://website.com/images/background.png";
+$this->settings["bgimage"] = "";
+// signature pen color
+$this->settings["color"] = "#145394";
+// signature line width
+$this->settings["linewidth"] = 2;;
+		return;
+	}	
 	}
 }
 ?>
