@@ -1476,10 +1476,7 @@
 <div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
 {END message_block}	<style>
 @media screen and (max-width: 767px) {
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_fk"]:before {
-		content: "{$label global_users_contratistas id_fk}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Username"]:before {
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Username"]:before {
 		content: "{$label global_users_contratistas Username}";
 	}
 				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_email"]:before {
@@ -1500,16 +1497,7 @@
 				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="global_rol_contratos"]:before {
 		content: "{$label global_users_contratistas global_rol_contratos}";
 	}
-																						[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sys_user"]:before {
-		content: "{$label global_users_contratistas sys_user}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sys_date"]:before {
-		content: "{$label global_users_contratistas sys_date}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sys_time"]:before {
-		content: "{$label global_users_contratistas sys_time}";
-	}
-															[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_dep"]:before {
+																																					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_dep"]:before {
 		content: "{$label global_users_contratistas usr_dep}";
 	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_cargo"]:before {
@@ -1521,13 +1509,7 @@
 				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_datebirth"]:before {
 		content: "{$label global_users_contratistas usr_datebirth}";
 	}
-							[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="active"]:before {
-		content: "{$label global_users_contratistas active}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="groupid"]:before {
-		content: "{$label global_users_contratistas groupid}";
-	}
-					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="phone"]:before {
+											[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="phone"]:before {
 		content: "{$label global_users_contratistas phone}";
 	}
 		}
@@ -1775,87 +1757,6 @@
 	</th>
 	{END cellblock_grid_headcell_field6}
 				 
-					{BEGIN cellblock_grid_headcell_field7}
-	<th
-	
-	{$cell_grid_headcell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$sys_user_class}
-			"
-
-			data-field="sys_user"
-	
-	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN sys_user_fieldheadercolumn}
-	{BEGIN sys_user_fieldheader}
-	<SPAN {$sys_user_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_user">
-	{$label global_users_contratistas sys_user }	{$arrow_icon_sys_user}
-	</SPAN>
-	{END sys_user_fieldheader}
-{END sys_user_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field7}
-				 
-					{BEGIN cellblock_grid_headcell_field8}
-	<th
-	
-	{$cell_grid_headcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$sys_date_class}
-			"
-
-			data-field="sys_date"
-	
-	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN sys_date_fieldheadercolumn}
-	{BEGIN sys_date_fieldheader}
-	<SPAN {$sys_date_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_date">
-	{$label global_users_contratistas sys_date }	{$arrow_icon_sys_date}
-	</SPAN>
-	{END sys_date_fieldheader}
-{END sys_date_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field8}
-				 
-					{BEGIN cellblock_grid_headcell_field9}
-	<th
-	
-	{$cell_grid_headcell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$sys_time_class}
-			"
-
-			data-field="sys_time"
-	
-	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN sys_time_fieldheadercolumn}
-	{BEGIN sys_time_fieldheader}
-	<SPAN {$sys_time_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_time">
-	{$label global_users_contratistas sys_time }	{$arrow_icon_sys_time}
-	</SPAN>
-	{END sys_time_fieldheader}
-{END sys_time_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field9}
-				 
 					{BEGIN cellblock_grid_headcell_field10}
 	<th
 	
@@ -1963,87 +1864,6 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field13}
-				 
-					{BEGIN cellblock_grid_headcell_field14}
-	<th
-	
-	{$cell_grid_headcell_field14}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$active_class}
-			"
-
-			data-field="active"
-	
-	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN active_fieldheadercolumn}
-	{BEGIN active_fieldheader}
-	<SPAN {$active_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field77" {$item_simple_grid_field77} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="active">
-	{$label global_users_contratistas active }	{$arrow_icon_active}
-	</SPAN>
-	{END active_fieldheader}
-{END active_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field14}
-				 
-					{BEGIN cellblock_grid_headcell_field15}
-	<th
-	
-	{$cell_grid_headcell_field15}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$groupid_class}
-			"
-
-			data-field="groupid"
-	
-	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN groupid_fieldheadercolumn}
-	{BEGIN groupid_fieldheader}
-	<SPAN {$groupid_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field78" {$item_simple_grid_field78} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="groupid">
-	{$label global_users_contratistas groupid }	{$arrow_icon_groupid}
-	</SPAN>
-	{END groupid_fieldheader}
-{END groupid_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field15}
-				 
-					{BEGIN cellblock_grid_headcell_field16}
-	<th
-	
-	{$cell_grid_headcell_field16}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$id_fk_class}
-			"
-
-			data-field="id_fk"
-	
-	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN id_fk_fieldheadercolumn}
-	{BEGIN id_fk_fieldheader}
-	<SPAN {$id_fk_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_fk">
-	{$label global_users_contratistas id_fk }	{$arrow_icon_id_fk}
-	</SPAN>
-	{END id_fk_fieldheader}
-{END id_fk_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field16}
 				 
 					{BEGIN cellblock_grid_headcell_field17}
 	<th
@@ -2311,75 +2131,6 @@
 	</td>
 	{END cellblock_grid_cell_field6}
 				 
-					{BEGIN cellblock_grid_cell_field7}
-	<td
-	
-	{$cell_grid_cell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$sys_user_class}
-			"
-
-			data-field="sys_user"
-	
-	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN sys_user_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_user" data-default-width >
-{$sys_user_value}
-</span>
-{END sys_user_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field7}
-				 
-					{BEGIN cellblock_grid_cell_field8}
-	<td
-	
-	{$cell_grid_cell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$sys_date_class}
-			"
-
-			data-field="sys_date"
-	
-	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN sys_date_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_date" data-default-width >
-{$sys_date_value}
-</span>
-{END sys_date_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field8}
-				 
-					{BEGIN cellblock_grid_cell_field9}
-	<td
-	
-	{$cell_grid_cell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$sys_time_class}
-			"
-
-			data-field="sys_time"
-	
-	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN sys_time_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_time" data-default-width >
-{$sys_time_value}
-</span>
-{END sys_time_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field9}
-				 
 					{BEGIN cellblock_grid_cell_field10}
 	<td
 	
@@ -2471,75 +2222,6 @@
 {END usr_datebirth_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field13}
-				 
-					{BEGIN cellblock_grid_cell_field14}
-	<td
-	
-	{$cell_grid_cell_field14}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$active_class}
-			"
-
-			data-field="active"
-	
-	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN active_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field75" {$item_simple_grid_field75} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="active" data-default-width >
-{$active_value}
-</span>
-{END active_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field14}
-				 
-					{BEGIN cellblock_grid_cell_field15}
-	<td
-	
-	{$cell_grid_cell_field15}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$groupid_class}
-			"
-
-			data-field="groupid"
-	
-	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN groupid_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field76" {$item_simple_grid_field76} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="groupid" data-default-width >
-{$groupid_value}
-</span>
-{END groupid_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field15}
-				 
-					{BEGIN cellblock_grid_cell_field16}
-	<td
-	
-	{$cell_grid_cell_field16}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$id_fk_class}
-			"
-
-			data-field="id_fk"
-	
-	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN id_fk_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_fk" data-default-width >
-{$id_fk_value}
-</span>
-{END id_fk_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field16}
 				 
 					{BEGIN cellblock_grid_cell_field17}
 	<td
@@ -2723,54 +2405,6 @@
 	</td>
 	{END cellblock_grid_footcell_field6}
 				 
-					{BEGIN cellblock_grid_footcell_field7}
-	<td
-	
-	{$cell_grid_footcell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field7}
-				 
-					{BEGIN cellblock_grid_footcell_field8}
-	<td
-	
-	{$cell_grid_footcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field8}
-				 
-					{BEGIN cellblock_grid_footcell_field9}
-	<td
-	
-	{$cell_grid_footcell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field9}
-				 
 					{BEGIN cellblock_grid_footcell_field10}
 	<td
 	
@@ -2834,54 +2468,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field13}
-				 
-					{BEGIN cellblock_grid_footcell_field14}
-	<td
-	
-	{$cell_grid_footcell_field14}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field14}
-				 
-					{BEGIN cellblock_grid_footcell_field15}
-	<td
-	
-	{$cell_grid_footcell_field15}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field15}
-				 
-					{BEGIN cellblock_grid_footcell_field16}
-	<td
-	
-	{$cell_grid_footcell_field16}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_contratistas_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field16}
 				 
 					{BEGIN cellblock_grid_footcell_field17}
 	<td

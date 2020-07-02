@@ -100,9 +100,6 @@ pdfDocument = {
 										{BEGIN col_grid_13}
 					"%",
 					{END col_grid_13}
-										{BEGIN col_grid_14}
-					"%",
-					{END col_grid_14}
 															],
 							heights: [ // first height for header part
 					"%",
@@ -619,32 +616,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field10}
-																			{BEGIN cellblock_grid_headcell_field11}
-{
-	cellId: 'headcell_field11',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field23}","text":"{$jslabel funcionario signpad }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$signpad_align}',
-  },
-
-{END cellblock_grid_headcell_field11}
 											],
 				{END row_grid_0}
 									
@@ -1023,32 +994,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field10}
-																			{BEGIN cellblock_grid_cell_field11}
-{
-	cellId: 'cell_field11',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field4}","text":{$signpad_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$signpad_align}',
-  },
-
-{END cellblock_grid_cell_field11}
 											],
 				{END row_grid_1}
 								{BEGIN row_grid_2}
@@ -1160,12 +1105,6 @@ pdfDocument = {
 				cellId: 'cell_dpreview',
 				row:  0,
 				col:  13,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  14,
 				text: ''
 			},
 							],
@@ -1512,30 +1451,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field10}
-																			{BEGIN cellblock_grid_footcell_field11}
-{
-	cellId: 'footcell_field11',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field11}
 											],
 				{END row_grid_3}
 							

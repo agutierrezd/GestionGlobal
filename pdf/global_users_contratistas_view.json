@@ -436,7 +436,7 @@ pdfDocument = {
 			location: 'section1',
 			widths: ['*'],
 			body: [
-				[{text: 'Permisos módulos', style: 'tableHeader'}],
+				[{text: 'Perfil | Dependencia', style: 'tableHeader'}],
 				[{
 					table: {
 						tableForm: true,
@@ -508,6 +508,62 @@ pdfDocument = {
 {END cellblock_section1_c3}
 											],
 				{END row_section1_0}
+								{BEGIN row_section1_1}
+				[
+												{BEGIN cellblock_section1_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field64}","stack":[{"text":"{$jslabel global_users_contratistas usr_dep }","bold":true},{"text":{$usr_dep_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c}
+																			{BEGIN cellblock_section1_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field65}","stack":[{"text":"{$jslabel global_users_contratistas usr_cargo }","bold":true},{"text":{$usr_cargo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c4}
+											],
+				{END row_section1_1}
 									]
 					}
 				}]
@@ -525,7 +581,7 @@ pdfDocument = {
 			location: 'section2',
 			widths: ['*'],
 			body: [
-				[{text: '::', style: 'tableHeader'}],
+				[{text: '.', style: 'tableHeader'}],
 				[{
 					table: {
 						tableForm: true,
@@ -564,10 +620,8 @@ pdfDocument = {
 	
 			"stack": [
 		
-				
-			{"hidden":"{$item_hide_integrated_edit_field65}","stack":[{"text":"{$jslabel global_users_contratistas usr_cargo }","bold":true},{"text":{$usr_cargo_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },
@@ -590,10 +644,8 @@ pdfDocument = {
 	
 			"stack": [
 		
-				
-			{"hidden":"{$item_hide_integrated_edit_field64}","stack":[{"text":"{$jslabel global_users_contratistas usr_dep }","bold":true},{"text":{$usr_dep_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },

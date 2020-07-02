@@ -595,65 +595,6 @@ pdfDocument = {
 		},
 		margin: [0,0,0,15],
 	},
- 
-		{
-		layout: 'panel',
-		
-		table: {
-			tableForm: true,
-			location: 'section2',
-			widths: ['*'],
-			body: [
-				[{text: 'Firma', style: 'tableHeader'}],
-				[{
-					table: {
-						tableForm: true,
-						widths: [
-							 
-								{BEGIN col_section2_0}
-								'*', 
-								{END col_section2_0}
-													],
-						body: [
-								
-					{BEGIN row_section2_0}
-				[
-												{BEGIN cellblock_section2_c1}
-{
-	cellId: 'c1',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel funcionario signpad }","bold":true},{"text":{$signpad_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_section2_c1}
-											],
-				{END row_section2_0}
-									]
-					}
-				}]
-
-			]
-		},
-		margin: [0,0,0,15],
-	},
 				
 		  ],
   "border": [ false, false, false, false ],

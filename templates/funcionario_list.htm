@@ -126,19 +126,6 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_sueldo}</span>
 						</div>
 		{END searchCtrlBlock_sueldo}
-																{BEGIN searchCtrlBlock_signpad}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_signpad}" {$filterRow_attrs_signpad}>
-			<label>{$label funcionario signpad }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_signpad}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_signpad}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_signpad}</span>
-						</div>
-		{END searchCtrlBlock_signpad}
 																{BEGIN searchCtrlBlock_idContrato}
 
 
@@ -696,10 +683,7 @@ data-pagetype="print"
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="estado_funcionario"]:before {
 		content: "{$label funcionario estado_funcionario}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="signpad"]:before {
-		content: "{$label funcionario signpad}";
-	}
-	}
+		}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
 	cellpadding="0" 
@@ -1067,33 +1051,6 @@ data-pagetype="print"
 	
 	</th>
 	{END cellblock_grid_headcell_field10}
-				 
-					{BEGIN cellblock_grid_headcell_field11}
-	<th
-	
-	{$cell_grid_headcell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$signpad_class}
-			"
-
-			data-field="signpad"
-	
-	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN signpad_fieldheadercolumn}
-	{BEGIN signpad_fieldheader}
-	<SPAN {$signpad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="signpad">
-	{$label funcionario signpad }	{$arrow_icon_signpad}
-	</SPAN>
-	{END signpad_fieldheader}
-{END signpad_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field11}
 							</tr>
 					 
 					 
@@ -1461,29 +1418,6 @@ data-pagetype="print"
 {END estado_funcionario_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field10}
-				 
-					{BEGIN cellblock_grid_cell_field11}
-	<td
-	
-	{$cell_grid_cell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$signpad_class}
-			"
-
-			data-field="signpad"
-	
-	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN signpad_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="signpad" data-default-width >
-{$signpad_value}
-</span>
-{END signpad_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field11}
 							</tr>
 					 
 						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
@@ -1754,22 +1688,6 @@ data-pagetype="print"
 	
 	</td>
 	{END cellblock_grid_footcell_field10}
-				 
-					{BEGIN cellblock_grid_footcell_field11}
-	<td
-	
-	{$cell_grid_footcell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="funcionario_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field11}
 							</tr>
 					
 					</tfoot>

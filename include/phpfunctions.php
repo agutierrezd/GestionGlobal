@@ -940,6 +940,11 @@ function GetLWWhere($field, $ptype, $table = "")
 	global $strTableName;
 	if(!$table)
 		$table = $strTableName;
+		if($table=="global_users_contratistas" && $field=="usr_cargo")
+	{
+		$strWhere = " id = 94";
+		return $strWhere;
+	}
 	return "";
 }
 
@@ -1002,6 +1007,10 @@ function GetDefaultValue($field, $ptype, $table="")
 				if($table=="global_users_contratistas" && $field=="sys_time")
 	{
 		return strftime("%H:%M:%S");
+	}
+				if($table=="global_users_contratistas" && $field=="usr_cargo")
+	{
+		return 94;
 	}
 				if($table=="global_users_contratistas" && $field=="active")
 	{
@@ -1073,6 +1082,10 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 				if($table=="global_users_contratistas" && $field=="sys_time")
 	{
 		return strftime("%H:%M:%S");
+	}
+				if($table=="global_users_contratistas" && $field=="usr_cargo")
+	{
+		return 94;
 	}
 				if($table=="global_users_contratistas" && $field=="active")
 	{
